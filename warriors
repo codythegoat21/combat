@@ -1,0 +1,2582 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Phone = {
+	Phone = Instance.new("ScreenGui"),
+	MainOutline = Instance.new("Frame"),
+	Power = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	Close = Instance.new("TextButton"),
+	Outline = Instance.new("Frame"),
+	UICorner_2 = Instance.new("UICorner"),
+	Screen = Instance.new("Frame"),
+	UICorner_3 = Instance.new("UICorner"),
+	Startup = Instance.new("Frame"),
+	ImageLabel = Instance.new("ImageLabel"),
+	UICorner_4 = Instance.new("UICorner"),
+	UICorner_5 = Instance.new("UICorner"),
+	LockWallpaper = Instance.new("ImageLabel"),
+	LockScreen = Instance.new("Frame"),
+	UICorner_6 = Instance.new("UICorner"),
+	Time = Instance.new("TextLabel"),
+	HomeBar = Instance.new("Frame"),
+	Bar = Instance.new("Frame"),
+	UICorner_7 = Instance.new("UICorner"),
+	Swipe = Instance.new("TextLabel"),
+	UICorner_8 = Instance.new("UICorner"),
+	HomeWallpaper = Instance.new("ImageLabel"),
+	Home = Instance.new("Frame"),
+	UICorner_9 = Instance.new("UICorner"),
+	Apps = Instance.new("Frame"),
+	UIGridLayout = Instance.new("UIGridLayout"),
+	Credits = Instance.new("ImageLabel"),
+	UICorner_10 = Instance.new("UICorner"),
+	UIGradient = Instance.new("UIGradient"),
+	AppName = Instance.new("TextLabel"),
+	AppButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint"),
+	Help = Instance.new("ImageLabel"),
+	UICorner_11 = Instance.new("UICorner"),
+	UIGradient_2 = Instance.new("UIGradient"),
+	AppName_2 = Instance.new("TextLabel"),
+	AppButton_2 = Instance.new("TextButton"),
+	UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint"),
+	Settings = Instance.new("ImageLabel"),
+	UICorner_12 = Instance.new("UICorner"),
+	UIGradient_3 = Instance.new("UIGradient"),
+	AppName_3 = Instance.new("TextLabel"),
+	AppButton_3 = Instance.new("TextButton"),
+	UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint"),
+	scripts = Instance.new("ImageLabel"),
+	UICorner_13 = Instance.new("UICorner"),
+	UIGradient_4 = Instance.new("UIGradient"),
+	AppName_4 = Instance.new("TextLabel"),
+	AppButton_4 = Instance.new("TextButton"),
+	UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint"),
+	Apps2 = Instance.new("Frame"),
+	UICorner_14 = Instance.new("UICorner"),
+	Apps_2 = Instance.new("Frame"),
+	UICorner_15 = Instance.new("UICorner"),
+	UIGridLayout_2 = Instance.new("UIGridLayout"),
+	UICorner_16 = Instance.new("UICorner"),
+	NoappClick = Instance.new("TextButton"),
+	UICorner_17 = Instance.new("UICorner"),
+	Apps_3 = Instance.new("Frame"),
+	UICorner_18 = Instance.new("UICorner"),
+	Credits_2 = Instance.new("Frame"),
+	UICorner_19 = Instance.new("UICorner"),
+	Fade = Instance.new("Frame"),
+	UICorner_20 = Instance.new("UICorner"),
+	AppFrame = Instance.new("Frame"),
+	UICorner_21 = Instance.new("UICorner"),
+	AppText = Instance.new("TextLabel"),
+	Frame = Instance.new("Frame"),
+	PlayerIcon = Instance.new("Frame"),
+	UICorner_22 = Instance.new("UICorner"),
+	UIGradient_5 = Instance.new("UIGradient"),
+	ImageLabel_2 = Instance.new("ImageLabel"),
+	UICorner_23 = Instance.new("UICorner"),
+	Info = Instance.new("TextLabel"),
+	PlayerName = Instance.new("TextLabel"),
+	HomeBar_2 = Instance.new("Frame"),
+	Bar_2 = Instance.new("Frame"),
+	UICorner_24 = Instance.new("UICorner"),
+	Info_2 = Instance.new("Frame"),
+	UICorner_25 = Instance.new("UICorner"),
+	Fade_2 = Instance.new("Frame"),
+	UICorner_26 = Instance.new("UICorner"),
+	AppFrame_2 = Instance.new("Frame"),
+	UICorner_27 = Instance.new("UICorner"),
+	AppText_2 = Instance.new("TextLabel"),
+	Content = Instance.new("ScrollingFrame"),
+	UIListLayout = Instance.new("UIListLayout"),
+	TextLabel = Instance.new("TextLabel"),
+	HomeBar_3 = Instance.new("Frame"),
+	Bar_3 = Instance.new("Frame"),
+	UICorner_28 = Instance.new("UICorner"),
+	Settings_2 = Instance.new("Frame"),
+	UICorner_29 = Instance.new("UICorner"),
+	Fade_3 = Instance.new("Frame"),
+	UICorner_30 = Instance.new("UICorner"),
+	AppFrame_3 = Instance.new("Frame"),
+	UICorner_31 = Instance.new("UICorner"),
+	PlayerIcon_2 = Instance.new("Frame"),
+	UICorner_32 = Instance.new("UICorner"),
+	UIGradient_6 = Instance.new("UIGradient"),
+	ImageLabel_3 = Instance.new("ImageLabel"),
+	UICorner_33 = Instance.new("UICorner"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	GameSettings = Instance.new("TextButton"),
+	UICorner_34 = Instance.new("UICorner"),
+	Settings_3 = Instance.new("Frame"),
+	UICorner_35 = Instance.new("UICorner"),
+	Shadows = Instance.new("Frame"),
+	UICorner_36 = Instance.new("UICorner"),
+	Header = Instance.new("TextLabel"),
+	On = Instance.new("TextButton"),
+	UICorner_37 = Instance.new("UICorner"),
+	Off = Instance.new("TextButton"),
+	UICorner_38 = Instance.new("UICorner"),
+	FOV = Instance.new("TextBox"),
+	UICorner_39 = Instance.new("UICorner"),
+	SetFov = Instance.new("TextButton"),
+	UICorner_40 = Instance.new("UICorner"),
+	Back = Instance.new("TextButton"),
+	Diffuse = Instance.new("Frame"),
+	UICorner_41 = Instance.new("UICorner"),
+	Header_2 = Instance.new("TextLabel"),
+	On_2 = Instance.new("TextButton"),
+	UICorner_42 = Instance.new("UICorner"),
+	Off_2 = Instance.new("TextButton"),
+	UICorner_43 = Instance.new("UICorner"),
+	Specular = Instance.new("Frame"),
+	UICorner_44 = Instance.new("UICorner"),
+	Header_3 = Instance.new("TextLabel"),
+	On_3 = Instance.new("TextButton"),
+	UICorner_45 = Instance.new("UICorner"),
+	Off_3 = Instance.new("TextButton"),
+	UICorner_46 = Instance.new("UICorner"),
+	AppText_3 = Instance.new("TextLabel"),
+	DisplayName = Instance.new("TextLabel"),
+	PlayerName_2 = Instance.new("TextLabel"),
+	HomeBar_4 = Instance.new("Frame"),
+	Bar_4 = Instance.new("Frame"),
+	UICorner_47 = Instance.new("UICorner"),
+	scripts_2 = Instance.new("Frame"),
+	UICorner_48 = Instance.new("UICorner"),
+	Fade_4 = Instance.new("Frame"),
+	UICorner_49 = Instance.new("UICorner"),
+	AppFrame_4 = Instance.new("Frame"),
+	UICorner_50 = Instance.new("UICorner"),
+	AppText_4 = Instance.new("TextLabel"),
+	Passes = Instance.new("Frame"),
+	UICorner_51 = Instance.new("UICorner"),
+	ScrollingFrame_2 = Instance.new("ScrollingFrame"),
+	UIListLayout_2 = Instance.new("UIListLayout"),
+	Frame_2 = Instance.new("Frame"),
+	UICorner_52 = Instance.new("UICorner"),
+	NameOfTheHack = Instance.new("TextLabel"),
+	Button = Instance.new("Frame"),
+	TextButton = Instance.new("TextButton"),
+	UICorner_53 = Instance.new("UICorner"),
+	WorkingOrNot = Instance.new("TextLabel"),
+	ScriptDesc = Instance.new("TextLabel"),
+	HomeBar_5 = Instance.new("Frame"),
+	Bar_5 = Instance.new("Frame"),
+	UICorner_54 = Instance.new("UICorner"),
+	App = Instance.new("Frame"),
+	UICorner_55 = Instance.new("UICorner"),
+	Fade_5 = Instance.new("Frame"),
+	UICorner_56 = Instance.new("UICorner"),
+	AppFrame_5 = Instance.new("Frame"),
+	UICorner_57 = Instance.new("UICorner"),
+	AppText_5 = Instance.new("TextLabel"),
+	HomeBar_6 = Instance.new("Frame"),
+	Bar_6 = Instance.new("Frame"),
+	UICorner_58 = Instance.new("UICorner"),
+	Sleep = Instance.new("Frame"),
+	UICorner_59 = Instance.new("UICorner"),
+	Top = Instance.new("Frame"),
+	Battery = Instance.new("ImageLabel"),
+	Battery_2 = Instance.new("ImageLabel"),
+	WiFi = Instance.new("ImageLabel"),
+	DataBars = Instance.new("ImageLabel"),
+	DataProvider = Instance.new("TextLabel"),
+	Time_2 = Instance.new("TextLabel"),
+	Top_2 = Instance.new("Frame"),
+	UICorner_60 = Instance.new("UICorner"),
+	Top_3 = Instance.new("Frame"),
+	UICorner_61 = Instance.new("UICorner"),
+	UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint"),
+	Top_4 = Instance.new("Frame"),
+	UICorner_62 = Instance.new("UICorner"),
+	UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint"),
+	Top_5 = Instance.new("Frame"),
+	UICorner_63 = Instance.new("UICorner"),
+	UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint"),
+	Top_6 = Instance.new("Frame"),
+	UICorner_64 = Instance.new("UICorner"),
+	UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint"),
+	Top_7 = Instance.new("Frame"),
+	UICorner_65 = Instance.new("UICorner"),
+	UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint"),
+	OpenButton = Instance.new("Frame"),
+	UICorner_66 = Instance.new("UICorner"),
+	Open = Instance.new("TextButton"),
+}
+
+--Properties:
+
+Phone.Phone.Name = "Phone"
+Phone.Phone.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Phone.Phone.Enabled = false
+Phone.Phone.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Phone.Phone.ResetOnSpawn = false
+
+Phone.MainOutline.Name = "MainOutline"
+Phone.MainOutline.Parent = Phone.Phone
+Phone.MainOutline.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.MainOutline.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.MainOutline.BackgroundTransparency = 1.000
+Phone.MainOutline.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.MainOutline.Size = UDim2.new(0.213392898, 0, 0.664947033, 0)
+Phone.MainOutline.ZIndex = 10
+
+Phone.Power.Name = "Power"
+Phone.Power.Parent = Phone.MainOutline
+Phone.Power.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Power.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Power.Position = UDim2.new(0.959868371, 0, 0.215464666, 0)
+Phone.Power.Size = UDim2.new(0.121409953, 0, 0.144300893, 0)
+
+Phone.UICorner.CornerRadius = UDim.new(0.300000012, 0)
+Phone.UICorner.Parent = Phone.Power
+
+Phone.Close.Name = "Close"
+Phone.Close.Parent = Phone.Power
+Phone.Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Close.BackgroundTransparency = 1.000
+Phone.Close.Position = UDim2.new(0.556858182, 0, -0.180836454, 0)
+Phone.Close.Size = UDim2.new(0.884377837, 0, 1.3204174, 0)
+Phone.Close.ZIndex = 5
+Phone.Close.Font = Enum.Font.SourceSans
+Phone.Close.Text = " "
+Phone.Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.Close.TextSize = 14.000
+
+Phone.Outline.Name = "Outline"
+Phone.Outline.Parent = Phone.MainOutline
+Phone.Outline.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Outline.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Outline.ClipsDescendants = true
+Phone.Outline.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Outline.Size = UDim2.new(1, 0, 1, 0)
+Phone.Outline.ZIndex = 2
+
+Phone.UICorner_2.CornerRadius = UDim.new(0.150000006, 0)
+Phone.UICorner_2.Parent = Phone.Outline
+
+Phone.Screen.Name = "Screen"
+Phone.Screen.Parent = Phone.Outline
+Phone.Screen.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Screen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Phone.Screen.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Screen.Size = UDim2.new(0.93354255, 0, 0.962109208, 0)
+Phone.Screen.ZIndex = 2
+
+Phone.UICorner_3.CornerRadius = UDim.new(0.129999995, 0)
+Phone.UICorner_3.Parent = Phone.Screen
+
+Phone.Startup.Name = "Startup"
+Phone.Startup.Parent = Phone.Screen
+Phone.Startup.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Startup.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Phone.Startup.ClipsDescendants = true
+Phone.Startup.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Startup.Size = UDim2.new(1, 0, 1, 0)
+Phone.Startup.Visible = false
+Phone.Startup.ZIndex = 10
+
+Phone.ImageLabel.Parent = Phone.Startup
+Phone.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.ImageLabel.BackgroundTransparency = 1.000
+Phone.ImageLabel.Position = UDim2.new(0.374437571, 0, 0.427716404, 0)
+Phone.ImageLabel.Size = UDim2.new(0.251083404, 0, 0.143112376, 0)
+Phone.ImageLabel.ZIndex = 49
+Phone.ImageLabel.Image = "rbxassetid://15474123802"
+Phone.ImageLabel.ImageTransparency = 0.999
+
+Phone.UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+Phone.UICorner_4.Parent = Phone.ImageLabel
+
+Phone.UICorner_5.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_5.Parent = Phone.Startup
+
+Phone.LockWallpaper.Name = "LockWallpaper"
+Phone.LockWallpaper.Parent = Phone.Screen
+Phone.LockWallpaper.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.LockWallpaper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.LockWallpaper.BackgroundTransparency = 1.000
+Phone.LockWallpaper.ClipsDescendants = true
+Phone.LockWallpaper.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.LockWallpaper.Size = UDim2.new(1, 0, 1, 0)
+Phone.LockWallpaper.Visible = false
+Phone.LockWallpaper.ZIndex = 7
+Phone.LockWallpaper.Image = "rbxassetid://15474123802"
+
+Phone.LockScreen.Name = "LockScreen"
+Phone.LockScreen.Parent = Phone.LockWallpaper
+Phone.LockScreen.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.LockScreen.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.LockScreen.BackgroundTransparency = 1.000
+Phone.LockScreen.ClipsDescendants = true
+Phone.LockScreen.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.LockScreen.Size = UDim2.new(1, 0, 1, 0)
+Phone.LockScreen.ZIndex = 2
+
+Phone.UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
+Phone.UICorner_6.Parent = Phone.LockScreen
+
+Phone.Time.Name = "Time"
+Phone.Time.Parent = Phone.LockScreen
+Phone.Time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Time.BackgroundTransparency = 1.000
+Phone.Time.Position = UDim2.new(0.0648978576, 0, 0.0997321308, 0)
+Phone.Time.Size = UDim2.new(0.866772532, 0, 0.119187817, 0)
+Phone.Time.ZIndex = 2
+Phone.Time.Font = Enum.Font.GothamBold
+Phone.Time.Text = "00:00"
+Phone.Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Time.TextScaled = true
+Phone.Time.TextSize = 14.000
+Phone.Time.TextWrapped = true
+
+Phone.HomeBar.Name = "HomeBar"
+Phone.HomeBar.Parent = Phone.LockScreen
+Phone.HomeBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.HomeBar.BackgroundTransparency = 1.000
+Phone.HomeBar.Position = UDim2.new(0.27589187, 0, 0.970410705, 0)
+Phone.HomeBar.Size = UDim2.new(0.448452175, 0, 0.0250000004, 0)
+Phone.HomeBar.ZIndex = 7
+
+Phone.Bar.Name = "Bar"
+Phone.Bar.Parent = Phone.HomeBar
+Phone.Bar.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Bar.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Bar.Size = UDim2.new(1, 0, 0.400000006, 0)
+Phone.Bar.ZIndex = 7
+
+Phone.UICorner_7.CornerRadius = UDim.new(1000, 0)
+Phone.UICorner_7.Parent = Phone.Bar
+
+Phone.Swipe.Name = "Swipe"
+Phone.Swipe.Parent = Phone.HomeBar
+Phone.Swipe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Swipe.BackgroundTransparency = 1.000
+Phone.Swipe.Position = UDim2.new(0.0648979768, 0, -2.14160967, 0)
+Phone.Swipe.Size = UDim2.new(0.866772532, 0, 2.08813334, 0)
+Phone.Swipe.ZIndex = 2
+Phone.Swipe.Font = Enum.Font.SourceSansBold
+Phone.Swipe.Text = "Swipe up to open"
+Phone.Swipe.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Swipe.TextScaled = true
+Phone.Swipe.TextSize = 14.000
+Phone.Swipe.TextTransparency = 1.000
+Phone.Swipe.TextWrapped = true
+
+Phone.UICorner_8.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_8.Parent = Phone.LockWallpaper
+
+Phone.HomeWallpaper.Name = "HomeWallpaper"
+Phone.HomeWallpaper.Parent = Phone.Screen
+Phone.HomeWallpaper.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.HomeWallpaper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.HomeWallpaper.BackgroundTransparency = 1.000
+Phone.HomeWallpaper.ClipsDescendants = true
+Phone.HomeWallpaper.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.HomeWallpaper.Size = UDim2.new(1, 0, 1, 0)
+Phone.HomeWallpaper.Image = "rbxassetid://15474123802"
+
+Phone.Home.Name = "Home"
+Phone.Home.Parent = Phone.HomeWallpaper
+Phone.Home.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Home.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Home.BackgroundTransparency = 1.000
+Phone.Home.ClipsDescendants = true
+Phone.Home.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Home.Size = UDim2.new(1, 0, 1, 0)
+Phone.Home.ZIndex = 2
+
+Phone.UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
+Phone.UICorner_9.Parent = Phone.Home
+
+Phone.Apps.Name = "Apps"
+Phone.Apps.Parent = Phone.Home
+Phone.Apps.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+Phone.Apps.BackgroundTransparency = 1.000
+Phone.Apps.Position = UDim2.new(0.0419214368, 0, 0.0662868619, 0)
+Phone.Apps.Size = UDim2.new(0.916837871, 0, 0.780861437, 0)
+
+Phone.UIGridLayout.Parent = Phone.Apps
+Phone.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Phone.UIGridLayout.CellPadding = UDim2.new(0.0260000005, 0, 0.0599999987, 0)
+Phone.UIGridLayout.CellSize = UDim2.new(0.230000004, 0, 0.150000006, 0)
+
+Phone.Credits.Name = "Credits"
+Phone.Credits.Parent = Phone.Apps
+Phone.Credits.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Credits.Position = UDim2.new(0.0499999411, 0, 0.195366099, 0)
+Phone.Credits.Size = UDim2.new(0.243000001, 0, 0.14951013, 0)
+Phone.Credits.ZIndex = 3
+Phone.Credits.Image = "http://www.roblox.com/asset/?id=6034287513"
+Phone.Credits.ScaleType = Enum.ScaleType.Fit
+
+Phone.UICorner_10.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_10.Parent = Phone.Credits
+
+Phone.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(213, 213, 213)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Phone.UIGradient.Rotation = -90
+Phone.UIGradient.Parent = Phone.Credits
+
+Phone.AppName.Name = "AppName"
+Phone.AppName.Parent = Phone.Credits
+Phone.AppName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName.BackgroundTransparency = 1.000
+Phone.AppName.Position = UDim2.new(0, 0, 1, 0)
+Phone.AppName.Size = UDim2.new(1, 0, 0.25, 0)
+Phone.AppName.Font = Enum.Font.GothamBold
+Phone.AppName.Text = "Credits"
+Phone.AppName.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName.TextScaled = true
+Phone.AppName.TextSize = 14.000
+Phone.AppName.TextWrapped = true
+
+Phone.AppButton.Name = "AppButton"
+Phone.AppButton.Parent = Phone.Credits
+Phone.AppButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppButton.BackgroundTransparency = 1.000
+Phone.AppButton.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppButton.Font = Enum.Font.SourceSans
+Phone.AppButton.Text = " "
+Phone.AppButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.AppButton.TextSize = 14.000
+
+Phone.UIAspectRatioConstraint.Parent = Phone.Credits
+
+Phone.Help.Name = "Help"
+Phone.Help.Parent = Phone.Apps
+Phone.Help.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Help.Position = UDim2.new(0.0499999411, 0, 0.195366099, 0)
+Phone.Help.Size = UDim2.new(0.243000001, 0, 0.14951013, 0)
+Phone.Help.ZIndex = 3
+Phone.Help.Image = "http://www.roblox.com/asset/?id=6026568192"
+Phone.Help.ScaleType = Enum.ScaleType.Fit
+
+Phone.UICorner_11.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_11.Parent = Phone.Help
+
+Phone.UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(213, 213, 213)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Phone.UIGradient_2.Rotation = -90
+Phone.UIGradient_2.Parent = Phone.Help
+
+Phone.AppName_2.Name = "AppName"
+Phone.AppName_2.Parent = Phone.Help
+Phone.AppName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName_2.BackgroundTransparency = 1.000
+Phone.AppName_2.Position = UDim2.new(0, 0, 1, 0)
+Phone.AppName_2.Size = UDim2.new(1, 0, 0.25, 0)
+Phone.AppName_2.Font = Enum.Font.GothamBold
+Phone.AppName_2.Text = "Info"
+Phone.AppName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName_2.TextScaled = true
+Phone.AppName_2.TextSize = 14.000
+Phone.AppName_2.TextWrapped = true
+
+Phone.AppButton_2.Name = "AppButton"
+Phone.AppButton_2.Parent = Phone.Help
+Phone.AppButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppButton_2.BackgroundTransparency = 1.000
+Phone.AppButton_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppButton_2.Font = Enum.Font.SourceSans
+Phone.AppButton_2.Text = " "
+Phone.AppButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.AppButton_2.TextSize = 14.000
+
+Phone.UIAspectRatioConstraint_2.Parent = Phone.Help
+
+Phone.Settings.Name = "Settings"
+Phone.Settings.Parent = Phone.Apps
+Phone.Settings.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Settings.Position = UDim2.new(0.0499999411, 0, 0.195366099, 0)
+Phone.Settings.Size = UDim2.new(0.243000001, 0, 0.14951013, 0)
+Phone.Settings.ZIndex = 3
+Phone.Settings.Image = "http://www.roblox.com/asset/?id=6031280882"
+Phone.Settings.ScaleType = Enum.ScaleType.Fit
+
+Phone.UICorner_12.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_12.Parent = Phone.Settings
+
+Phone.UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(213, 213, 213)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Phone.UIGradient_3.Rotation = -90
+Phone.UIGradient_3.Parent = Phone.Settings
+
+Phone.AppName_3.Name = "AppName"
+Phone.AppName_3.Parent = Phone.Settings
+Phone.AppName_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName_3.BackgroundTransparency = 1.000
+Phone.AppName_3.Position = UDim2.new(0, 0, 1, 0)
+Phone.AppName_3.Size = UDim2.new(1, 0, 0.25, 0)
+Phone.AppName_3.Font = Enum.Font.GothamBold
+Phone.AppName_3.Text = "Settings"
+Phone.AppName_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName_3.TextScaled = true
+Phone.AppName_3.TextSize = 14.000
+Phone.AppName_3.TextWrapped = true
+
+Phone.AppButton_3.Name = "AppButton"
+Phone.AppButton_3.Parent = Phone.Settings
+Phone.AppButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppButton_3.BackgroundTransparency = 1.000
+Phone.AppButton_3.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppButton_3.Font = Enum.Font.SourceSans
+Phone.AppButton_3.Text = " "
+Phone.AppButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.AppButton_3.TextSize = 14.000
+
+Phone.UIAspectRatioConstraint_3.Parent = Phone.Settings
+
+Phone.scripts.Name = "scripts"
+Phone.scripts.Parent = Phone.Apps
+Phone.scripts.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.scripts.Position = UDim2.new(0.0499999411, 0, 0.195366099, 0)
+Phone.scripts.Size = UDim2.new(0.243000001, 0, 0.14951013, 0)
+Phone.scripts.ZIndex = 3
+Phone.scripts.Image = "http://www.roblox.com/asset/?id=6031265976"
+Phone.scripts.ScaleType = Enum.ScaleType.Fit
+
+Phone.UICorner_13.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_13.Parent = Phone.scripts
+
+Phone.UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(213, 213, 213)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Phone.UIGradient_4.Rotation = -90
+Phone.UIGradient_4.Parent = Phone.scripts
+
+Phone.AppName_4.Name = "AppName"
+Phone.AppName_4.Parent = Phone.scripts
+Phone.AppName_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName_4.BackgroundTransparency = 1.000
+Phone.AppName_4.Position = UDim2.new(0, 0, 1, 0)
+Phone.AppName_4.Size = UDim2.new(1, 0, 0.25, 0)
+Phone.AppName_4.Font = Enum.Font.GothamBold
+Phone.AppName_4.Text = "script"
+Phone.AppName_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppName_4.TextScaled = true
+Phone.AppName_4.TextSize = 14.000
+Phone.AppName_4.TextWrapped = true
+
+Phone.AppButton_4.Name = "AppButton"
+Phone.AppButton_4.Parent = Phone.scripts
+Phone.AppButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppButton_4.BackgroundTransparency = 1.000
+Phone.AppButton_4.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppButton_4.Font = Enum.Font.SourceSans
+Phone.AppButton_4.Text = " "
+Phone.AppButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.AppButton_4.TextSize = 14.000
+
+Phone.UIAspectRatioConstraint_4.Parent = Phone.scripts
+
+Phone.Apps2.Name = "Apps2"
+Phone.Apps2.Parent = Phone.Home
+Phone.Apps2.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+Phone.Apps2.BackgroundTransparency = 0.500
+Phone.Apps2.ClipsDescendants = true
+Phone.Apps2.Position = UDim2.new(0.0498653352, 0, 0.858956099, 0)
+Phone.Apps2.Size = UDim2.new(0.89864862, 0, 0.116190672, 0)
+Phone.Apps2.ZIndex = 5
+
+Phone.UICorner_14.CornerRadius = UDim.new(0.300000012, 0)
+Phone.UICorner_14.Parent = Phone.Apps2
+
+Phone.Apps_2.Name = "Apps"
+Phone.Apps_2.Parent = Phone.Apps2
+Phone.Apps_2.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+Phone.Apps_2.BackgroundTransparency = 1.000
+Phone.Apps_2.ClipsDescendants = true
+Phone.Apps_2.Position = UDim2.new(0.0178902857, 0, 0.0860139877, 0)
+Phone.Apps_2.Size = UDim2.new(0.962686419, 0, 0.827728331, 0)
+
+Phone.UICorner_15.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_15.Parent = Phone.Apps_2
+
+Phone.UIGridLayout_2.Parent = Phone.Apps_2
+Phone.UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+Phone.UIGridLayout_2.CellPadding = UDim2.new(0.0529999994, 0, 0, 0)
+Phone.UIGridLayout_2.CellSize = UDim2.new(0.209999993, 0, 1, 0)
+
+Phone.UICorner_16.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_16.Parent = Phone.HomeWallpaper
+
+Phone.NoappClick.Name = "NoappClick"
+Phone.NoappClick.Parent = Phone.HomeWallpaper
+Phone.NoappClick.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.NoappClick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.NoappClick.BackgroundTransparency = 1.000
+Phone.NoappClick.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.NoappClick.Size = UDim2.new(1, 0, 1, 0)
+Phone.NoappClick.Visible = false
+Phone.NoappClick.ZIndex = 3
+Phone.NoappClick.Font = Enum.Font.SourceSans
+Phone.NoappClick.Text = " "
+Phone.NoappClick.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.NoappClick.TextSize = 14.000
+
+Phone.UICorner_17.CornerRadius = UDim.new(0.129999995, 0)
+Phone.UICorner_17.Parent = Phone.NoappClick
+
+Phone.Apps_3.Name = "Apps"
+Phone.Apps_3.Parent = Phone.HomeWallpaper
+Phone.Apps_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Apps_3.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+Phone.Apps_3.BackgroundTransparency = 1.000
+Phone.Apps_3.ClipsDescendants = true
+Phone.Apps_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Apps_3.Size = UDim2.new(1, 0, 1, 0)
+Phone.Apps_3.ZIndex = 4
+
+Phone.UICorner_18.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_18.Parent = Phone.Apps_3
+
+Phone.Credits_2.Name = "Credits"
+Phone.Credits_2.Parent = Phone.Apps_3
+Phone.Credits_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Credits_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Credits_2.BackgroundTransparency = 1.000
+Phone.Credits_2.ClipsDescendants = true
+Phone.Credits_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Credits_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.Credits_2.Visible = false
+Phone.Credits_2.ZIndex = 4
+
+Phone.UICorner_19.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_19.Parent = Phone.Credits_2
+
+Phone.Fade.Name = "Fade"
+Phone.Fade.Parent = Phone.Credits_2
+Phone.Fade.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Fade.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Fade.ClipsDescendants = true
+Phone.Fade.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Fade.Size = UDim2.new(1, 0, 1, 0)
+Phone.Fade.Visible = false
+Phone.Fade.ZIndex = 6
+
+Phone.UICorner_20.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_20.Parent = Phone.Fade
+
+Phone.AppFrame.Name = "AppFrame"
+Phone.AppFrame.Parent = Phone.Credits_2
+Phone.AppFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.AppFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.AppFrame.ClipsDescendants = true
+Phone.AppFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.AppFrame.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppFrame.ZIndex = 5
+
+Phone.UICorner_21.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_21.Parent = Phone.AppFrame
+
+Phone.AppText.Name = "AppText"
+Phone.AppText.Parent = Phone.AppFrame
+Phone.AppText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText.BackgroundTransparency = 1.000
+Phone.AppText.Position = UDim2.new(0.00613579154, 0, 0.0634302124, 0)
+Phone.AppText.Size = UDim2.new(1.00000012, 0, 0.0658366084, 0)
+Phone.AppText.ZIndex = 6
+Phone.AppText.Font = Enum.Font.Gotham
+Phone.AppText.Text = "Credits"
+Phone.AppText.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText.TextScaled = true
+Phone.AppText.TextSize = 14.000
+Phone.AppText.TextWrapped = true
+
+Phone.Frame.Parent = Phone.AppFrame
+Phone.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.Frame.BorderSizePixel = 0
+Phone.Frame.Position = UDim2.new(0.49999994, 0, 0.258596718, 0)
+Phone.Frame.Size = UDim2.new(1, 0, 0.150861919, 0)
+
+Phone.PlayerIcon.Name = "PlayerIcon"
+Phone.PlayerIcon.Parent = Phone.Frame
+Phone.PlayerIcon.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.PlayerIcon.Position = UDim2.new(0.00613579154, 0, 0.186625972, 0)
+Phone.PlayerIcon.Size = UDim2.new(0.270495683, 0, 1, 0)
+Phone.PlayerIcon.ZIndex = 6
+
+Phone.UICorner_22.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_22.Parent = Phone.PlayerIcon
+
+Phone.UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(185, 185, 185)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Phone.UIGradient_5.Rotation = -35
+Phone.UIGradient_5.Parent = Phone.PlayerIcon
+
+Phone.ImageLabel_2.Parent = Phone.PlayerIcon
+Phone.ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.ImageLabel_2.BackgroundTransparency = 1.000
+Phone.ImageLabel_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.ImageLabel_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Phone.UICorner_23.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_23.Parent = Phone.ImageLabel_2
+
+Phone.Info.Name = "Info"
+Phone.Info.Parent = Phone.Frame
+Phone.Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Info.BackgroundTransparency = 1.000
+Phone.Info.Position = UDim2.new(0.317024559, 0, 0.636906624, 0)
+Phone.Info.Size = UDim2.new(0.689111531, 0, 0.450053185, 0)
+Phone.Info.ZIndex = 6
+Phone.Info.Font = Enum.Font.Gotham
+Phone.Info.Text = "cool epic hacker gui maker."
+Phone.Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Info.TextScaled = true
+Phone.Info.TextSize = 14.000
+Phone.Info.TextWrapped = true
+Phone.Info.TextXAlignment = Enum.TextXAlignment.Left
+
+Phone.PlayerName.Name = "PlayerName"
+Phone.PlayerName.Parent = Phone.Frame
+Phone.PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.PlayerName.BackgroundTransparency = 1.000
+Phone.PlayerName.Position = UDim2.new(0.317024559, 0, 0.290716857, 0)
+Phone.PlayerName.Size = UDim2.new(0.689111531, 0, 0.346189737, 0)
+Phone.PlayerName.ZIndex = 6
+Phone.PlayerName.Font = Enum.Font.Gotham
+Phone.PlayerName.Text = "real_codycolon"
+Phone.PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.PlayerName.TextScaled = true
+Phone.PlayerName.TextSize = 14.000
+Phone.PlayerName.TextWrapped = true
+Phone.PlayerName.TextXAlignment = Enum.TextXAlignment.Left
+
+Phone.HomeBar_2.Name = "HomeBar"
+Phone.HomeBar_2.Parent = Phone.Credits_2
+Phone.HomeBar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.HomeBar_2.BackgroundTransparency = 1.000
+Phone.HomeBar_2.Position = UDim2.new(0.27589187, 0, 0.970410705, 0)
+Phone.HomeBar_2.Size = UDim2.new(0.448452175, 0, 0.0250000004, 0)
+Phone.HomeBar_2.ZIndex = 7
+
+Phone.Bar_2.Name = "Bar"
+Phone.Bar_2.Parent = Phone.HomeBar_2
+Phone.Bar_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Bar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Bar_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Bar_2.Size = UDim2.new(1, 0, 0.400000006, 0)
+Phone.Bar_2.ZIndex = 7
+
+Phone.UICorner_24.CornerRadius = UDim.new(1000, 0)
+Phone.UICorner_24.Parent = Phone.Bar_2
+
+Phone.Info_2.Name = "Info"
+Phone.Info_2.Parent = Phone.Apps_3
+Phone.Info_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Info_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Info_2.BackgroundTransparency = 1.000
+Phone.Info_2.ClipsDescendants = true
+Phone.Info_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Info_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.Info_2.Visible = false
+Phone.Info_2.ZIndex = 4
+
+Phone.UICorner_25.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_25.Parent = Phone.Info_2
+
+Phone.Fade_2.Name = "Fade"
+Phone.Fade_2.Parent = Phone.Info_2
+Phone.Fade_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Fade_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Fade_2.ClipsDescendants = true
+Phone.Fade_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Fade_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.Fade_2.Visible = false
+Phone.Fade_2.ZIndex = 6
+
+Phone.UICorner_26.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_26.Parent = Phone.Fade_2
+
+Phone.AppFrame_2.Name = "AppFrame"
+Phone.AppFrame_2.Parent = Phone.Info_2
+Phone.AppFrame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.AppFrame_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.AppFrame_2.ClipsDescendants = true
+Phone.AppFrame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.AppFrame_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppFrame_2.ZIndex = 5
+
+Phone.UICorner_27.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_27.Parent = Phone.AppFrame_2
+
+Phone.AppText_2.Name = "AppText"
+Phone.AppText_2.Parent = Phone.AppFrame_2
+Phone.AppText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_2.BackgroundTransparency = 1.000
+Phone.AppText_2.Position = UDim2.new(0.00613579154, 0, 0.0634302124, 0)
+Phone.AppText_2.Size = UDim2.new(1.00000012, 0, 0.0658366084, 0)
+Phone.AppText_2.ZIndex = 6
+Phone.AppText_2.Font = Enum.Font.Gotham
+Phone.AppText_2.Text = "Info"
+Phone.AppText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_2.TextScaled = true
+Phone.AppText_2.TextSize = 14.000
+Phone.AppText_2.TextWrapped = true
+
+Phone.Content.Name = "Content"
+Phone.Content.Parent = Phone.AppFrame_2
+Phone.Content.Active = true
+Phone.Content.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Content.BackgroundTransparency = 1.000
+Phone.Content.BorderSizePixel = 0
+Phone.Content.Position = UDim2.new(0.49999994, 0, 0.55189395, 0)
+Phone.Content.Size = UDim2.new(0.896596849, 0, 0.808779895, 0)
+Phone.Content.ScrollBarThickness = 2
+
+Phone.UIListLayout.Parent = Phone.Content
+Phone.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Phone.TextLabel.Parent = Phone.Content
+Phone.TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.TextLabel.BackgroundTransparency = 1.000
+Phone.TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.TextLabel.Size = UDim2.new(1, 0, 0.200000003, 0)
+Phone.TextLabel.Font = Enum.Font.Gotham
+Phone.TextLabel.Text = "We are not responsible if you get banned in the game.."
+Phone.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.TextLabel.TextScaled = true
+Phone.TextLabel.TextSize = 14.000
+Phone.TextLabel.TextWrapped = true
+Phone.TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+Phone.HomeBar_3.Name = "HomeBar"
+Phone.HomeBar_3.Parent = Phone.Info_2
+Phone.HomeBar_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.HomeBar_3.BackgroundTransparency = 1.000
+Phone.HomeBar_3.Position = UDim2.new(0.27589187, 0, 0.970410705, 0)
+Phone.HomeBar_3.Size = UDim2.new(0.448452175, 0, 0.0250000004, 0)
+Phone.HomeBar_3.ZIndex = 7
+
+Phone.Bar_3.Name = "Bar"
+Phone.Bar_3.Parent = Phone.HomeBar_3
+Phone.Bar_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Bar_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Bar_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Bar_3.Size = UDim2.new(1, 0, 0.400000006, 0)
+Phone.Bar_3.ZIndex = 7
+
+Phone.UICorner_28.CornerRadius = UDim.new(1000, 0)
+Phone.UICorner_28.Parent = Phone.Bar_3
+
+Phone.Settings_2.Name = "Settings"
+Phone.Settings_2.Parent = Phone.Apps_3
+Phone.Settings_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Settings_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Settings_2.BackgroundTransparency = 1.000
+Phone.Settings_2.ClipsDescendants = true
+Phone.Settings_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Settings_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.Settings_2.Visible = false
+Phone.Settings_2.ZIndex = 4
+
+Phone.UICorner_29.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_29.Parent = Phone.Settings_2
+
+Phone.Fade_3.Name = "Fade"
+Phone.Fade_3.Parent = Phone.Settings_2
+Phone.Fade_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Fade_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Fade_3.ClipsDescendants = true
+Phone.Fade_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Fade_3.Size = UDim2.new(1, 0, 1, 0)
+Phone.Fade_3.Visible = false
+Phone.Fade_3.ZIndex = 6
+
+Phone.UICorner_30.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_30.Parent = Phone.Fade_3
+
+Phone.AppFrame_3.Name = "AppFrame"
+Phone.AppFrame_3.Parent = Phone.Settings_2
+Phone.AppFrame_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.AppFrame_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.AppFrame_3.ClipsDescendants = true
+Phone.AppFrame_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.AppFrame_3.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppFrame_3.ZIndex = 5
+
+Phone.UICorner_31.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_31.Parent = Phone.AppFrame_3
+
+Phone.PlayerIcon_2.Name = "PlayerIcon"
+Phone.PlayerIcon_2.Parent = Phone.AppFrame_3
+Phone.PlayerIcon_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.PlayerIcon_2.Position = UDim2.new(0.0926394165, 0, 0.186626181, 0)
+Phone.PlayerIcon_2.Size = UDim2.new(0.321158677, 0, 0.163000003, 0)
+Phone.PlayerIcon_2.ZIndex = 6
+
+Phone.UICorner_32.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_32.Parent = Phone.PlayerIcon_2
+
+Phone.UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(185, 185, 185)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Phone.UIGradient_6.Rotation = -35
+Phone.UIGradient_6.Parent = Phone.PlayerIcon_2
+
+Phone.ImageLabel_3.Parent = Phone.PlayerIcon_2
+Phone.ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.ImageLabel_3.BackgroundTransparency = 1.000
+Phone.ImageLabel_3.Size = UDim2.new(1, 0, 1, 0)
+Phone.ImageLabel_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Phone.UICorner_33.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_33.Parent = Phone.ImageLabel_3
+
+Phone.ScrollingFrame.Parent = Phone.AppFrame_3
+Phone.ScrollingFrame.Active = true
+Phone.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.ScrollingFrame.BackgroundTransparency = 1.000
+Phone.ScrollingFrame.Position = UDim2.new(0.0705586225, 0, 0.436040908, 0)
+Phone.ScrollingFrame.Size = UDim2.new(0.870747209, 0, 0.522634149, 0)
+Phone.ScrollingFrame.ZIndex = 6
+Phone.ScrollingFrame.ScrollBarThickness = 0
+
+Phone.GameSettings.Name = "GameSettings"
+Phone.GameSettings.Parent = Phone.ScrollingFrame
+Phone.GameSettings.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.GameSettings.Size = UDim2.new(1.00000012, 0, 0.0258499943, 0)
+Phone.GameSettings.ZIndex = 6
+Phone.GameSettings.AutoButtonColor = false
+Phone.GameSettings.Font = Enum.Font.GothamBold
+Phone.GameSettings.Text = "Game Settings"
+Phone.GameSettings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.GameSettings.TextScaled = true
+Phone.GameSettings.TextSize = 14.000
+Phone.GameSettings.TextWrapped = true
+
+Phone.UICorner_34.CornerRadius = UDim.new(0.5, 0)
+Phone.UICorner_34.Parent = Phone.GameSettings
+
+Phone.Settings_3.Name = "Settings"
+Phone.Settings_3.Parent = Phone.ScrollingFrame
+Phone.Settings_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Settings_3.Position = UDim2.new(1.00999999, 0, 0, 0)
+Phone.Settings_3.Size = UDim2.new(1, 0, 0.25, 0)
+Phone.Settings_3.ZIndex = 6
+
+Phone.UICorner_35.CornerRadius = UDim.new(0.125, 0)
+Phone.UICorner_35.Parent = Phone.Settings_3
+
+Phone.Shadows.Name = "Shadows"
+Phone.Shadows.Parent = Phone.Settings_3
+Phone.Shadows.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Phone.Shadows.Position = UDim2.new(0.0425620228, 0, 0.200000003, 0)
+Phone.Shadows.Size = UDim2.new(0.912157059, 0, 0.141142264, 0)
+Phone.Shadows.ZIndex = 6
+
+Phone.UICorner_36.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_36.Parent = Phone.Shadows
+
+Phone.Header.Name = "Header"
+Phone.Header.Parent = Phone.Shadows
+Phone.Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Header.BackgroundTransparency = 1.000
+Phone.Header.Position = UDim2.new(0.0500485189, 0, 0.298874527, 0)
+Phone.Header.Size = UDim2.new(0.277965635, 0, 0.400761157, 0)
+Phone.Header.Font = Enum.Font.Gotham
+Phone.Header.Text = "Shadows"
+Phone.Header.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Header.TextScaled = true
+Phone.Header.TextSize = 30.000
+Phone.Header.TextWrapped = true
+
+Phone.On.Name = "On"
+Phone.On.Parent = Phone.Shadows
+Phone.On.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.On.Position = UDim2.new(0.365267813, 0, 0.207865894, 0)
+Phone.On.Size = UDim2.new(0.274933308, 0, 0.567516446, 0)
+Phone.On.AutoButtonColor = false
+Phone.On.Font = Enum.Font.Gotham
+Phone.On.Text = "On"
+Phone.On.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.On.TextScaled = true
+Phone.On.TextSize = 14.000
+Phone.On.TextWrapped = true
+
+Phone.UICorner_37.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_37.Parent = Phone.On
+
+Phone.Off.Name = "Off"
+Phone.Off.Parent = Phone.Shadows
+Phone.Off.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Off.Position = UDim2.new(0.662395179, 0, 0.207865894, 0)
+Phone.Off.Size = UDim2.new(0.274933308, 0, 0.567516446, 0)
+Phone.Off.AutoButtonColor = false
+Phone.Off.Font = Enum.Font.Gotham
+Phone.Off.Text = "Off"
+Phone.Off.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Off.TextScaled = true
+Phone.Off.TextSize = 14.000
+Phone.Off.TextWrapped = true
+
+Phone.UICorner_38.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_38.Parent = Phone.Off
+
+Phone.FOV.Name = "FOV"
+Phone.FOV.Parent = Phone.Settings_3
+Phone.FOV.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.FOV.Position = UDim2.new(0.0425619818, 0, 0.736706257, 0)
+Phone.FOV.Size = UDim2.new(0.533679187, 0, 0.225550503, 0)
+Phone.FOV.ZIndex = 6
+Phone.FOV.Font = Enum.Font.Gotham
+Phone.FOV.PlaceholderText = "FOV"
+Phone.FOV.Text = ""
+Phone.FOV.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.FOV.TextScaled = true
+Phone.FOV.TextSize = 14.000
+Phone.FOV.TextWrapped = true
+
+Phone.UICorner_39.CornerRadius = UDim.new(0.100000001, 0)
+Phone.UICorner_39.Parent = Phone.FOV
+
+Phone.SetFov.Name = "SetFov"
+Phone.SetFov.Parent = Phone.Settings_3
+Phone.SetFov.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.SetFov.Position = UDim2.new(0.664346874, 0, 0.786563933, 0)
+Phone.SetFov.Size = UDim2.new(0.29375121, 0, 0.124534823, 0)
+Phone.SetFov.ZIndex = 6
+Phone.SetFov.AutoButtonColor = false
+Phone.SetFov.Font = Enum.Font.Gotham
+Phone.SetFov.Text = "Set"
+Phone.SetFov.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.SetFov.TextScaled = true
+Phone.SetFov.TextSize = 14.000
+Phone.SetFov.TextWrapped = true
+
+Phone.UICorner_40.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_40.Parent = Phone.SetFov
+
+Phone.Back.Name = "Back"
+Phone.Back.Parent = Phone.Settings_3
+Phone.Back.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Phone.Back.BackgroundTransparency = 1.000
+Phone.Back.Size = UDim2.new(0.205733269, 0, 0.199999899, 0)
+Phone.Back.ZIndex = 6
+Phone.Back.Font = Enum.Font.FredokaOne
+Phone.Back.Text = ">"
+Phone.Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Back.TextScaled = true
+Phone.Back.TextSize = 14.000
+Phone.Back.TextWrapped = true
+
+Phone.Diffuse.Name = "Diffuse"
+Phone.Diffuse.Parent = Phone.Settings_3
+Phone.Diffuse.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Phone.Diffuse.Position = UDim2.new(0.0425620228, 0, 0.37297982, 0)
+Phone.Diffuse.Size = UDim2.new(0.912157059, 0, 0.141142264, 0)
+Phone.Diffuse.ZIndex = 6
+
+Phone.UICorner_41.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_41.Parent = Phone.Diffuse
+
+Phone.Header_2.Name = "Header"
+Phone.Header_2.Parent = Phone.Diffuse
+Phone.Header_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Header_2.BackgroundTransparency = 1.000
+Phone.Header_2.Position = UDim2.new(0.0500485189, 0, 0.298874527, 0)
+Phone.Header_2.Size = UDim2.new(0.277965635, 0, 0.400761157, 0)
+Phone.Header_2.Font = Enum.Font.Gotham
+Phone.Header_2.Text = "Diffuse"
+Phone.Header_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Header_2.TextScaled = true
+Phone.Header_2.TextSize = 30.000
+Phone.Header_2.TextWrapped = true
+
+Phone.On_2.Name = "On"
+Phone.On_2.Parent = Phone.Diffuse
+Phone.On_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.On_2.Position = UDim2.new(0.365267813, 0, 0.207865894, 0)
+Phone.On_2.Size = UDim2.new(0.274933308, 0, 0.567516446, 0)
+Phone.On_2.AutoButtonColor = false
+Phone.On_2.Font = Enum.Font.Gotham
+Phone.On_2.Text = "On"
+Phone.On_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.On_2.TextScaled = true
+Phone.On_2.TextSize = 14.000
+Phone.On_2.TextWrapped = true
+
+Phone.UICorner_42.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_42.Parent = Phone.On_2
+
+Phone.Off_2.Name = "Off"
+Phone.Off_2.Parent = Phone.Diffuse
+Phone.Off_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Off_2.Position = UDim2.new(0.662395179, 0, 0.207865894, 0)
+Phone.Off_2.Size = UDim2.new(0.274933308, 0, 0.567516446, 0)
+Phone.Off_2.AutoButtonColor = false
+Phone.Off_2.Font = Enum.Font.Gotham
+Phone.Off_2.Text = "Off"
+Phone.Off_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Off_2.TextScaled = true
+Phone.Off_2.TextSize = 14.000
+Phone.Off_2.TextWrapped = true
+
+Phone.UICorner_43.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_43.Parent = Phone.Off_2
+
+Phone.Specular.Name = "Specular"
+Phone.Specular.Parent = Phone.Settings_3
+Phone.Specular.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Phone.Specular.Position = UDim2.new(0.0391825996, 0, 0.541635036, 0)
+Phone.Specular.Size = UDim2.new(0.915536463, 0, 0.141142264, 0)
+Phone.Specular.ZIndex = 6
+
+Phone.UICorner_44.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_44.Parent = Phone.Specular
+
+Phone.Header_3.Name = "Header"
+Phone.Header_3.Parent = Phone.Specular
+Phone.Header_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Header_3.BackgroundTransparency = 1.000
+Phone.Header_3.Position = UDim2.new(0.0500485189, 0, 0.298874527, 0)
+Phone.Header_3.Size = UDim2.new(0.277965635, 0, 0.400761157, 0)
+Phone.Header_3.Font = Enum.Font.Gotham
+Phone.Header_3.Text = "Reflections"
+Phone.Header_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Header_3.TextScaled = true
+Phone.Header_3.TextSize = 30.000
+Phone.Header_3.TextWrapped = true
+
+Phone.On_3.Name = "On"
+Phone.On_3.Parent = Phone.Specular
+Phone.On_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.On_3.Position = UDim2.new(0.365267813, 0, 0.207865894, 0)
+Phone.On_3.Size = UDim2.new(0.274933308, 0, 0.567516446, 0)
+Phone.On_3.AutoButtonColor = false
+Phone.On_3.Font = Enum.Font.Gotham
+Phone.On_3.Text = "On"
+Phone.On_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.On_3.TextScaled = true
+Phone.On_3.TextSize = 14.000
+Phone.On_3.TextWrapped = true
+
+Phone.UICorner_45.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_45.Parent = Phone.On_3
+
+Phone.Off_3.Name = "Off"
+Phone.Off_3.Parent = Phone.Specular
+Phone.Off_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Off_3.Position = UDim2.new(0.662395179, 0, 0.207865894, 0)
+Phone.Off_3.Size = UDim2.new(0.274933308, 0, 0.567516446, 0)
+Phone.Off_3.AutoButtonColor = false
+Phone.Off_3.Font = Enum.Font.Gotham
+Phone.Off_3.Text = "Off"
+Phone.Off_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Off_3.TextScaled = true
+Phone.Off_3.TextSize = 14.000
+Phone.Off_3.TextWrapped = true
+
+Phone.UICorner_46.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_46.Parent = Phone.Off_3
+
+Phone.AppText_3.Name = "AppText"
+Phone.AppText_3.Parent = Phone.AppFrame_3
+Phone.AppText_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_3.BackgroundTransparency = 1.000
+Phone.AppText_3.Position = UDim2.new(0.00613579154, 0, 0.0634302124, 0)
+Phone.AppText_3.Size = UDim2.new(1.00000012, 0, 0.0658366084, 0)
+Phone.AppText_3.ZIndex = 6
+Phone.AppText_3.Font = Enum.Font.Gotham
+Phone.AppText_3.Text = "Settings"
+Phone.AppText_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_3.TextScaled = true
+Phone.AppText_3.TextSize = 14.000
+Phone.AppText_3.TextWrapped = true
+
+Phone.DisplayName.Name = "DisplayName"
+Phone.DisplayName.Parent = Phone.AppFrame_3
+Phone.DisplayName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.DisplayName.BackgroundTransparency = 1.000
+Phone.DisplayName.Position = UDim2.new(0.45233354, 0, 0.186802596, 0)
+Phone.DisplayName.Size = UDim2.new(0.47867018, 0, 0.101761229, 0)
+Phone.DisplayName.ZIndex = 6
+Phone.DisplayName.Font = Enum.Font.Gotham
+Phone.DisplayName.Text = "t"
+Phone.DisplayName.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.DisplayName.TextScaled = true
+Phone.DisplayName.TextSize = 14.000
+Phone.DisplayName.TextWrapped = true
+Phone.DisplayName.TextXAlignment = Enum.TextXAlignment.Left
+
+Phone.PlayerName_2.Name = "PlayerName"
+Phone.PlayerName_2.Parent = Phone.AppFrame_3
+Phone.PlayerName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.PlayerName_2.BackgroundTransparency = 1.000
+Phone.PlayerName_2.Position = UDim2.new(0.45233354, 0, 0.290717334, 0)
+Phone.PlayerName_2.Size = UDim2.new(0.478670269, 0, 0.0504578315, 0)
+Phone.PlayerName_2.ZIndex = 6
+Phone.PlayerName_2.Font = Enum.Font.Gotham
+Phone.PlayerName_2.Text = "t"
+Phone.PlayerName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.PlayerName_2.TextScaled = true
+Phone.PlayerName_2.TextSize = 14.000
+Phone.PlayerName_2.TextWrapped = true
+Phone.PlayerName_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Phone.HomeBar_4.Name = "HomeBar"
+Phone.HomeBar_4.Parent = Phone.Settings_2
+Phone.HomeBar_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.HomeBar_4.BackgroundTransparency = 1.000
+Phone.HomeBar_4.Position = UDim2.new(0.27589187, 0, 0.970410705, 0)
+Phone.HomeBar_4.Size = UDim2.new(0.448452175, 0, 0.0250000004, 0)
+Phone.HomeBar_4.ZIndex = 7
+
+Phone.Bar_4.Name = "Bar"
+Phone.Bar_4.Parent = Phone.HomeBar_4
+Phone.Bar_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Bar_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Bar_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Bar_4.Size = UDim2.new(1, 0, 0.400000006, 0)
+Phone.Bar_4.ZIndex = 7
+
+Phone.UICorner_47.CornerRadius = UDim.new(1000, 0)
+Phone.UICorner_47.Parent = Phone.Bar_4
+
+Phone.scripts_2.Name = "scripts"
+Phone.scripts_2.Parent = Phone.Apps_3
+Phone.scripts_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.scripts_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.scripts_2.BackgroundTransparency = 1.000
+Phone.scripts_2.ClipsDescendants = true
+Phone.scripts_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.scripts_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.scripts_2.Visible = false
+Phone.scripts_2.ZIndex = 4
+
+Phone.UICorner_48.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_48.Parent = Phone.scripts_2
+
+Phone.Fade_4.Name = "Fade"
+Phone.Fade_4.Parent = Phone.scripts_2
+Phone.Fade_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Fade_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Fade_4.ClipsDescendants = true
+Phone.Fade_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Fade_4.Size = UDim2.new(1, 0, 1, 0)
+Phone.Fade_4.Visible = false
+Phone.Fade_4.ZIndex = 6
+
+Phone.UICorner_49.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_49.Parent = Phone.Fade_4
+
+Phone.AppFrame_4.Name = "AppFrame"
+Phone.AppFrame_4.Parent = Phone.scripts_2
+Phone.AppFrame_4.Active = true
+Phone.AppFrame_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.AppFrame_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.AppFrame_4.ClipsDescendants = true
+Phone.AppFrame_4.Position = UDim2.new(0.5, 0, 0.517432392, 0)
+Phone.AppFrame_4.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppFrame_4.ZIndex = 5
+
+Phone.UICorner_50.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_50.Parent = Phone.AppFrame_4
+
+Phone.AppText_4.Name = "AppText"
+Phone.AppText_4.Parent = Phone.AppFrame_4
+Phone.AppText_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_4.BackgroundTransparency = 1.000
+Phone.AppText_4.Position = UDim2.new(0.00613579154, 0, 0.0634302124, 0)
+Phone.AppText_4.Size = UDim2.new(1.00000012, 0, 0.0658366084, 0)
+Phone.AppText_4.ZIndex = 6
+Phone.AppText_4.Font = Enum.Font.Gotham
+Phone.AppText_4.Text = "hacks"
+Phone.AppText_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_4.TextScaled = true
+Phone.AppText_4.TextSize = 14.000
+Phone.AppText_4.TextWrapped = true
+
+Phone.Passes.Name = "Passes"
+Phone.Passes.Parent = Phone.AppFrame_4
+Phone.Passes.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Passes.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.Passes.BackgroundTransparency = 1.000
+Phone.Passes.ClipsDescendants = true
+Phone.Passes.Position = UDim2.new(0.5, 0, 0.546000004, 0)
+Phone.Passes.Size = UDim2.new(0.938000023, 0, 0.795000017, 0)
+
+Phone.UICorner_51.CornerRadius = UDim.new(0.0500000007, 0)
+Phone.UICorner_51.Parent = Phone.Passes
+
+Phone.ScrollingFrame_2.Parent = Phone.Passes
+Phone.ScrollingFrame_2.Active = true
+Phone.ScrollingFrame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.ScrollingFrame_2.BackgroundTransparency = 1.000
+Phone.ScrollingFrame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.ScrollingFrame_2.Size = UDim2.new(1, 0, 1, 0)
+Phone.ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 3, 0)
+Phone.ScrollingFrame_2.ScrollBarThickness = 0
+
+Phone.UIListLayout_2.Parent = Phone.ScrollingFrame_2
+Phone.UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+Phone.Frame_2.Parent = Phone.ScrollingFrame_2
+Phone.Frame_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Phone.Frame_2.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Phone.UICorner_52.CornerRadius = UDim.new(0.200000003, 0)
+Phone.UICorner_52.Parent = Phone.Frame_2
+
+Phone.NameOfTheHack.Name = "NameOfTheHack"
+Phone.NameOfTheHack.Parent = Phone.Frame_2
+Phone.NameOfTheHack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.NameOfTheHack.BackgroundTransparency = 1.000
+Phone.NameOfTheHack.BorderSizePixel = 0
+Phone.NameOfTheHack.Position = UDim2.new(0.384043425, 0, 0.202516481, 0)
+Phone.NameOfTheHack.Size = UDim2.new(0.384043276, 0, 0.161152303, 0)
+Phone.NameOfTheHack.Font = Enum.Font.Gotham
+Phone.NameOfTheHack.Text = "ScriptName"
+Phone.NameOfTheHack.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.NameOfTheHack.TextScaled = true
+Phone.NameOfTheHack.TextSize = 14.000
+Phone.NameOfTheHack.TextWrapped = true
+Phone.NameOfTheHack.TextXAlignment = Enum.TextXAlignment.Left
+
+Phone.Button.Name = "Button"
+Phone.Button.Parent = Phone.Frame_2
+Phone.Button.AnchorPoint = Vector2.new(1, 0.5)
+Phone.Button.BackgroundColor3 = Color3.fromRGB(85, 255, 127)
+Phone.Button.BorderSizePixel = 0
+Phone.Button.Position = UDim2.new(0.94999963, 0, 0.50000006, 0)
+Phone.Button.Size = UDim2.new(0.137298152, 0, 0.77393055, 0)
+Phone.Button.ZIndex = 2
+
+Phone.TextButton.Parent = Phone.Button
+Phone.TextButton.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.TextButton.BackgroundTransparency = 1.000
+Phone.TextButton.BorderSizePixel = 0
+Phone.TextButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.TextButton.Size = UDim2.new(1, 0, 1, 0)
+Phone.TextButton.Font = Enum.Font.SourceSans
+Phone.TextButton.Text = " "
+Phone.TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.TextButton.TextSize = 14.000
+
+Phone.UICorner_53.CornerRadius = UDim.new(0.25, 0)
+Phone.UICorner_53.Parent = Phone.Button
+
+Phone.WorkingOrNot.Name = "WorkingOrNot"
+Phone.WorkingOrNot.Parent = Phone.Frame_2
+Phone.WorkingOrNot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.WorkingOrNot.BackgroundTransparency = 1.000
+Phone.WorkingOrNot.BorderSizePixel = 0
+Phone.WorkingOrNot.Position = UDim2.new(0.384043425, 0, 0.668999434, 0)
+Phone.WorkingOrNot.Size = UDim2.new(0.384043276, 0, 0.217966065, 0)
+Phone.WorkingOrNot.Font = Enum.Font.Gotham
+Phone.WorkingOrNot.Text = "working"
+Phone.WorkingOrNot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.WorkingOrNot.TextScaled = true
+Phone.WorkingOrNot.TextSize = 14.000
+Phone.WorkingOrNot.TextWrapped = true
+Phone.WorkingOrNot.TextXAlignment = Enum.TextXAlignment.Left
+
+Phone.ScriptDesc.Name = "ScriptDesc"
+Phone.ScriptDesc.Parent = Phone.Frame_2
+Phone.ScriptDesc.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.ScriptDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.ScriptDesc.BackgroundTransparency = 1.000
+Phone.ScriptDesc.BorderSizePixel = 0
+Phone.ScriptDesc.Position = UDim2.new(0.384000003, 0, 0.202999994, 0)
+Phone.ScriptDesc.Size = UDim2.new(0.384000003, 0, 0.308999002, 0)
+Phone.ScriptDesc.Font = Enum.Font.Gotham
+Phone.ScriptDesc.Text = "ScriptDescription"
+Phone.ScriptDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.ScriptDesc.TextScaled = true
+Phone.ScriptDesc.TextSize = 14.000
+Phone.ScriptDesc.TextWrapped = true
+Phone.ScriptDesc.TextXAlignment = Enum.TextXAlignment.Left
+Phone.ScriptDesc.TextYAlignment = Enum.TextYAlignment.Top
+
+Phone.HomeBar_5.Name = "HomeBar"
+Phone.HomeBar_5.Parent = Phone.scripts_2
+Phone.HomeBar_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.HomeBar_5.BackgroundTransparency = 1.000
+Phone.HomeBar_5.Position = UDim2.new(0.27589187, 0, 0.970410705, 0)
+Phone.HomeBar_5.Size = UDim2.new(0.448452175, 0, 0.0250000004, 0)
+Phone.HomeBar_5.ZIndex = 7
+
+Phone.Bar_5.Name = "Bar"
+Phone.Bar_5.Parent = Phone.HomeBar_5
+Phone.Bar_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Bar_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Bar_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Bar_5.Size = UDim2.new(1, 0, 0.400000006, 0)
+Phone.Bar_5.ZIndex = 7
+
+Phone.UICorner_54.CornerRadius = UDim.new(1000, 0)
+Phone.UICorner_54.Parent = Phone.Bar_5
+
+Phone.App.Name = "App"
+Phone.App.Parent = Phone.Apps_3
+Phone.App.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.App.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.App.BackgroundTransparency = 1.000
+Phone.App.ClipsDescendants = true
+Phone.App.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.App.Size = UDim2.new(1, 0, 1, 0)
+Phone.App.Visible = false
+Phone.App.ZIndex = 4
+
+Phone.UICorner_55.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_55.Parent = Phone.App
+
+Phone.Fade_5.Name = "Fade"
+Phone.Fade_5.Parent = Phone.App
+Phone.Fade_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Fade_5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phone.Fade_5.ClipsDescendants = true
+Phone.Fade_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Fade_5.Size = UDim2.new(1, 0, 1, 0)
+Phone.Fade_5.Visible = false
+Phone.Fade_5.ZIndex = 6
+
+Phone.UICorner_56.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_56.Parent = Phone.Fade_5
+
+Phone.AppFrame_5.Name = "AppFrame"
+Phone.AppFrame_5.Parent = Phone.App
+Phone.AppFrame_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.AppFrame_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.AppFrame_5.ClipsDescendants = true
+Phone.AppFrame_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.AppFrame_5.Size = UDim2.new(1, 0, 1, 0)
+Phone.AppFrame_5.ZIndex = 5
+
+Phone.UICorner_57.CornerRadius = UDim.new(0.119999997, 0)
+Phone.UICorner_57.Parent = Phone.AppFrame_5
+
+Phone.AppText_5.Name = "AppText"
+Phone.AppText_5.Parent = Phone.AppFrame_5
+Phone.AppText_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_5.BackgroundTransparency = 1.000
+Phone.AppText_5.Position = UDim2.new(0.00613579154, 0, 0.0634302124, 0)
+Phone.AppText_5.Size = UDim2.new(1.00000012, 0, 0.0658366084, 0)
+Phone.AppText_5.ZIndex = 6
+Phone.AppText_5.Font = Enum.Font.Gotham
+Phone.AppText_5.Text = "combat"
+Phone.AppText_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.AppText_5.TextScaled = true
+Phone.AppText_5.TextSize = 14.000
+Phone.AppText_5.TextWrapped = true
+
+Phone.HomeBar_6.Name = "HomeBar"
+Phone.HomeBar_6.Parent = Phone.App
+Phone.HomeBar_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.HomeBar_6.BackgroundTransparency = 1.000
+Phone.HomeBar_6.Position = UDim2.new(0.27589187, 0, 0.970410705, 0)
+Phone.HomeBar_6.Size = UDim2.new(0.448452175, 0, 0.0250000004, 0)
+Phone.HomeBar_6.ZIndex = 7
+
+Phone.Bar_6.Name = "Bar"
+Phone.Bar_6.Parent = Phone.HomeBar_6
+Phone.Bar_6.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Bar_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Bar_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Bar_6.Size = UDim2.new(1, 0, 0.400000006, 0)
+Phone.Bar_6.ZIndex = 7
+
+Phone.UICorner_58.CornerRadius = UDim.new(1000, 0)
+Phone.UICorner_58.Parent = Phone.Bar_6
+
+Phone.Sleep.Name = "Sleep"
+Phone.Sleep.Parent = Phone.Screen
+Phone.Sleep.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Sleep.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Phone.Sleep.BackgroundTransparency = 1.000
+Phone.Sleep.ClipsDescendants = true
+Phone.Sleep.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Sleep.Size = UDim2.new(1, 0, 1, 0)
+Phone.Sleep.Visible = false
+Phone.Sleep.ZIndex = 10
+
+Phone.UICorner_59.CornerRadius = UDim.new(0.100000001, 0)
+Phone.UICorner_59.Parent = Phone.Sleep
+
+Phone.Top.Name = "Top"
+Phone.Top.Parent = Phone.Screen
+Phone.Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Top.BackgroundTransparency = 1.000
+Phone.Top.Position = UDim2.new(0.00546801742, 0, -0.000976538926, 0)
+Phone.Top.Size = UDim2.new(0.994531929, 0, 0.0499681234, 0)
+Phone.Top.ZIndex = 9
+
+Phone.Battery.Name = "Battery"
+Phone.Battery.Parent = Phone.Top
+Phone.Battery.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Battery.BackgroundTransparency = 1.000
+Phone.Battery.Position = UDim2.new(0.891442955, 0, 0.205174476, 0)
+Phone.Battery.Size = UDim2.new(0.0567844994, 0, 0.650981247, 0)
+Phone.Battery.ZIndex = 2
+Phone.Battery.Image = "http://www.roblox.com/asset/?id=8495832616"
+Phone.Battery.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+Phone.Battery_2.Name = "Battery"
+Phone.Battery_2.Parent = Phone.Battery
+Phone.Battery_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Battery_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Battery_2.BackgroundTransparency = 1.000
+Phone.Battery_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Phone.Battery_2.Size = UDim2.new(0.99000001, 0, 0.99000001, 0)
+Phone.Battery_2.ZIndex = 2
+Phone.Battery_2.Image = "http://www.roblox.com/asset/?id=8495832616"
+
+Phone.WiFi.Name = "WiFi"
+Phone.WiFi.Parent = Phone.Top
+Phone.WiFi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.WiFi.BackgroundTransparency = 1.000
+Phone.WiFi.Position = UDim2.new(0.834480584, 0, 0.205174476, 0)
+Phone.WiFi.Size = UDim2.new(0.0569618084, 0, 0.650981247, 0)
+Phone.WiFi.ZIndex = 2
+Phone.WiFi.Image = "http://www.roblox.com/asset/?id=8495836300"
+
+Phone.DataBars.Name = "DataBars"
+Phone.DataBars.Parent = Phone.Top
+Phone.DataBars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.DataBars.BackgroundTransparency = 1.000
+Phone.DataBars.Position = UDim2.new(0.772907436, 0, 0.205174476, 0)
+Phone.DataBars.Size = UDim2.new(0.0569618084, 0, 0.650981247, 0)
+Phone.DataBars.ZIndex = 2
+Phone.DataBars.Image = "http://www.roblox.com/asset/?id=8495842680"
+
+Phone.DataProvider.Name = "DataProvider"
+Phone.DataProvider.Parent = Phone.Top
+Phone.DataProvider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.DataProvider.BackgroundTransparency = 1.000
+Phone.DataProvider.Position = UDim2.new(0.0360755697, 0, 0.25542587, 0)
+Phone.DataProvider.Size = UDim2.new(0.183280021, 0, 0.628114522, 0)
+Phone.DataProvider.ZIndex = 2
+Phone.DataProvider.Font = Enum.Font.SourceSansBold
+Phone.DataProvider.Text = "hacker"
+Phone.DataProvider.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.DataProvider.TextScaled = true
+Phone.DataProvider.TextSize = 14.000
+Phone.DataProvider.TextWrapped = true
+
+Phone.Time_2.Name = "Time"
+Phone.Time_2.Parent = Phone.Top
+Phone.Time_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Time_2.BackgroundTransparency = 1.000
+Phone.Time_2.Position = UDim2.new(0.0360755697, 0, 0.25542587, 0)
+Phone.Time_2.Size = UDim2.new(0.183280021, 0, 0.628114522, 0)
+Phone.Time_2.ZIndex = 2
+Phone.Time_2.Font = Enum.Font.SourceSansBold
+Phone.Time_2.Text = "00:00"
+Phone.Time_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Time_2.TextScaled = true
+Phone.Time_2.TextSize = 14.000
+Phone.Time_2.TextTransparency = 1.000
+Phone.Time_2.TextWrapped = true
+
+Phone.Top_2.Name = "Top"
+Phone.Top_2.Parent = Phone.Outline
+Phone.Top_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Top_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.Top_2.Position = UDim2.new(0.496544451, 0, 0.011641359, 0)
+Phone.Top_2.Size = UDim2.new(0.506314039, 0, 0.0976809785, 0)
+Phone.Top_2.ZIndex = 50
+
+Phone.UICorner_60.CornerRadius = UDim.new(0.300000012, 0)
+Phone.UICorner_60.Parent = Phone.Top_2
+
+Phone.Top_3.Name = "Top"
+Phone.Top_3.Parent = Phone.Top_2
+Phone.Top_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Top_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.Top_3.Position = UDim2.new(0.279518425, 0, 0.725059509, 0)
+Phone.Top_3.Size = UDim2.new(0.113851964, 0, 0.386283576, 0)
+Phone.Top_3.ZIndex = 50
+
+Phone.UICorner_61.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_61.Parent = Phone.Top_3
+
+Phone.UIAspectRatioConstraint_5.Parent = Phone.Top_3
+
+Phone.Top_4.Name = "Top"
+Phone.Top_4.Parent = Phone.Top_2
+Phone.Top_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Top_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.Top_4.Position = UDim2.new(0.721621156, 0, 0.725059509, 0)
+Phone.Top_4.Size = UDim2.new(0.113851964, 0, 0.386283576, 0)
+Phone.Top_4.ZIndex = 50
+
+Phone.UICorner_62.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_62.Parent = Phone.Top_4
+
+Phone.UIAspectRatioConstraint_6.Parent = Phone.Top_4
+
+Phone.Top_5.Name = "Top"
+Phone.Top_5.Parent = Phone.Top_2
+Phone.Top_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Top_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.Top_5.Position = UDim2.new(0.892893314, 0, 0.725059509, 0)
+Phone.Top_5.Size = UDim2.new(0.113851964, 0, 0.386283576, 0)
+Phone.Top_5.ZIndex = 50
+
+Phone.UICorner_63.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_63.Parent = Phone.Top_5
+
+Phone.UIAspectRatioConstraint_7.Parent = Phone.Top_5
+
+Phone.Top_6.Name = "Top"
+Phone.Top_6.Parent = Phone.Top_2
+Phone.Top_6.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Top_6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.Top_6.Position = UDim2.new(0.112528205, 0, 0.725059509, 0)
+Phone.Top_6.Size = UDim2.new(0.113851964, 0, 0.386283576, 0)
+Phone.Top_6.ZIndex = 50
+
+Phone.UICorner_64.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_64.Parent = Phone.Top_6
+
+Phone.UIAspectRatioConstraint_8.Parent = Phone.Top_6
+
+Phone.Top_7.Name = "Top"
+Phone.Top_7.Parent = Phone.Top_2
+Phone.Top_7.AnchorPoint = Vector2.new(0.5, 0.5)
+Phone.Top_7.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Phone.Top_7.Position = UDim2.new(0.502058148, 0, 0.724052429, 0)
+Phone.Top_7.Size = UDim2.new(0.252358615, 0, 0.0977473632, 0)
+Phone.Top_7.ZIndex = 50
+
+Phone.UICorner_65.CornerRadius = UDim.new(1, 0)
+Phone.UICorner_65.Parent = Phone.Top_7
+
+Phone.UIAspectRatioConstraint_9.Parent = Phone.Top_7
+Phone.UIAspectRatioConstraint_9.AspectRatio = 7.200
+
+Phone.UIAspectRatioConstraint_10.Parent = Phone.Outline
+Phone.UIAspectRatioConstraint_10.AspectRatio = 0.570
+
+Phone.UIAspectRatioConstraint_11.Parent = Phone.MainOutline
+Phone.UIAspectRatioConstraint_11.AspectRatio = 0.570
+
+Phone.OpenButton.Name = "OpenButton"
+Phone.OpenButton.Parent = Phone.MainOutline
+Phone.OpenButton.AnchorPoint = Vector2.new(0.5, 0)
+Phone.OpenButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Phone.OpenButton.BackgroundTransparency = 0.750
+Phone.OpenButton.Position = UDim2.new(0.500655651, 0, -0.0617140159, 0)
+Phone.OpenButton.Size = UDim2.new(0.8233006, 0, 0.0461491495, 0)
+Phone.OpenButton.ZIndex = 0
+
+Phone.UICorner_66.CornerRadius = UDim.new(0.400000006, 0)
+Phone.UICorner_66.Parent = Phone.OpenButton
+
+Phone.Open.Name = "Open"
+Phone.Open.Parent = Phone.OpenButton
+Phone.Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.Open.BackgroundTransparency = 1.000
+Phone.Open.Size = UDim2.new(1, 0, 1, 0)
+Phone.Open.ZIndex = 5
+Phone.Open.Font = Enum.Font.SourceSans
+Phone.Open.Text = " "
+Phone.Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phone.Open.TextSize = 14.000
+
+-- Scripts:
+
+-- Phone.Close.Sleep is disabled.
+local function DXPGWE_fake_script() -- Phone.Power.Animations 
+	local script = Instance.new('LocalScript', Phone.Power)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	while true do
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(60,60,60)}):Play()
+		wait(1)
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+		wait(1)
+	end
+end
+coroutine.wrap(DXPGWE_fake_script)()
+-- Phone.Startup.LocalScript is disabled.
+local function LRTFXG_fake_script() -- Phone.Time.LocalScript 
+	local script = Instance.new('LocalScript', Phone.Time)
+
+	while true do
+		script.Parent.Text = string.sub(game.Lighting.TimeOfDay,1,5)
+		wait(1)
+	end
+end
+coroutine.wrap(LRTFXG_fake_script)()
+local function WFEY_fake_script() -- Phone.HomeBar.Animations 
+	local script = Instance.new('LocalScript', Phone.HomeBar)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	while true do
+		wait(3)
+		TweenService:Create(script.Parent.Swipe, Info, {TextTransparency = 0}):Play()
+		script.Parent:TweenPosition(UDim2.new(0.276, 0,0.956, 0), "InOut", "Quad", 0.75, true)
+		wait(0.75)
+		script.Parent.Swipe:TweenPosition(UDim2.new(0.065, 0,-3.5, 0), "InOut", "Quad", 1.75, true)
+		script.Parent:TweenPosition(UDim2.new(0.276, 0,0.97, 0), "InOut", "Quad", 1.75, true)
+		wait(1.75)
+		TweenService:Create(script.Parent.Swipe, Info, {TextTransparency = 1}):Play()
+		wait(0.5)
+		script.Parent.Swipe.Position = UDim2.new(0.065, 0,-2.142, 0)
+	end
+end
+coroutine.wrap(WFEY_fake_script)()
+local function PYTU_fake_script() -- Phone.HomeBar.LocalScript 
+	local script = Instance.new('LocalScript', Phone.HomeBar)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Disabled = true
+		script.Parent.Parent.Parent:TweenPosition(UDim2.new(.5,0,-0.5,0), "InOut", "Quad", 0.4, true)
+		TweenService:Create(script.Parent.Parent, Info, {BackgroundTransparency = 1}):Play()
+		TweenService:Create(script.Parent.Parent.Parent.Parent.HomeWallpaper, Info, {ImageTransparency = 0}):Play()
+		TweenService:Create(script.Parent.Parent.Parent.Parent.LockWallpaper, Info, {ImageTransparency = 1}):Play()
+		script.Parent.Parent.Parent.Parent.HomeWallpaper.Home:TweenSize(UDim2.new(1, 0,1, 0), "InOut", "Quad", 0.5, true)
+		
+		TweenService:Create(script.Parent.Parent.Parent.Parent.Top.DataProvider, Info, {TextTransparency = 1}):Play()
+		TweenService:Create(script.Parent.Parent.Parent.Parent.Top.Time, Info, {TextTransparency = 0}):Play()
+		TweenService:Create(script.Parent.Parent.Parent.Parent.Top.Time.UIStroke, Info, {Transparency = 0}):Play()
+	end)
+end
+coroutine.wrap(PYTU_fake_script)()
+local function FHHLO_fake_script() -- Phone.LockWallpaper.WallpaperColor 
+	local script = Instance.new('LocalScript', Phone.LockWallpaper)
+
+	-- ONLY 1 CAN BE TRUE. DEFAULT IS LIGHT
+	-- MAIN TINT OF YOUR WALLPAPER.
+	
+	local dark = true
+	local light = false
+	
+	-- IGNORE THIS.
+	
+	if dark == true then
+		script.Parent.LockScreen.Time.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Top.DataProvider.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.LockScreen.HomeBar.Bar.BackgroundColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.LockScreen.HomeBar.Swipe.TextColor3 = Color3.fromRGB(255,255,255)
+	else
+		
+	end
+	
+	if light == true then
+		script.Parent.LockScreen.Time.TextColor3 = Color3.fromRGB(0,0,0)
+		script.Parent.Parent.Top.DataProvider.TextColor3 = Color3.fromRGB(0,0,0)
+		script.Parent.LockScreen.HomeBar.Bar.BackgroundColor3 = Color3.fromRGB(0,0,0)
+		script.Parent.LockScreen.HomeBar.Swipe.TextColor3 = Color3.fromRGB(0,0,0)
+	else
+	
+	end
+end
+coroutine.wrap(FHHLO_fake_script)()
+local function TCUN_fake_script() -- Phone.AppButton.LocalScript 
+	local script = Instance.new('LocalScript', Phone.AppButton)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Parent.Apps
+	local app = appsframe.Credits -- CHANGE TO THE NAME OF THE FRAME OF THE APP. (2 OF THE SAME NAME WILL BREAK IT.)
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		appsframe.Parent.NoappClick.Visible = true
+		app:TweenSize(UDim2.new(1,0,1,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app, inf, {BackgroundTransparency = 0}):Play()
+		wait(0.125)
+		app.Fade.Visible = true
+		app.AppFrame.Visible = true
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 1}):Play()
+		tweens:Create(app.HomeBar.Bar, inf, {BackgroundTransparency = 0}):Play()
+	end)
+end
+coroutine.wrap(TCUN_fake_script)()
+local function AYAVD_fake_script() -- Phone.AppButton_2.LocalScript 
+	local script = Instance.new('LocalScript', Phone.AppButton_2)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Parent.Apps
+	local app = appsframe.Info -- CHANGE TO THE NAME OF THE FRAME OF THE APP. (2 OF THE SAME NAME WILL BREAK IT.)
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		appsframe.Parent.NoappClick.Visible = true
+		app:TweenSize(UDim2.new(1,0,1,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app, inf, {BackgroundTransparency = 0}):Play()
+		wait(0.125)
+		app.Fade.Visible = true
+		app.AppFrame.Visible = true
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 1}):Play()
+		tweens:Create(app.HomeBar.Bar, inf, {BackgroundTransparency = 0}):Play()
+	end)
+end
+coroutine.wrap(AYAVD_fake_script)()
+local function TWYTI_fake_script() -- Phone.AppButton_3.LocalScript 
+	local script = Instance.new('LocalScript', Phone.AppButton_3)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Parent.Apps
+	local app = appsframe.Settings -- CHANGE TO THE NAME OF THE FRAME OF THE APP. (2 OF THE SAME NAME WILL BREAK IT.)
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		appsframe.Parent.NoappClick.Visible = true
+		app:TweenSize(UDim2.new(1,0,1,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app, inf, {BackgroundTransparency = 0}):Play()
+		wait(0.125)
+		app.Fade.Visible = true
+		app.AppFrame.Visible = true
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 1}):Play()
+		tweens:Create(app.HomeBar.Bar, inf, {BackgroundTransparency = 0}):Play()
+	end)
+end
+coroutine.wrap(TWYTI_fake_script)()
+local function UJIYTS_fake_script() -- Phone.AppButton_4.LocalScript 
+	local script = Instance.new('LocalScript', Phone.AppButton_4)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Parent.Apps
+	local app = appsframe.scripts -- CHANGE TO THE NAME OF THE FRAME OF THE APP. (2 OF THE SAME NAME WILL BREAK IT.)
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		appsframe.Parent.NoappClick.Visible = true
+		app:TweenSize(UDim2.new(1,0,1,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app, inf, {BackgroundTransparency = 0}):Play()
+		wait(0.125)
+		app.Fade.Visible = true
+		app.AppFrame.Visible = true
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 1}):Play()
+		tweens:Create(app.HomeBar.Bar, inf, {BackgroundTransparency = 0}):Play()
+	end)
+end
+coroutine.wrap(UJIYTS_fake_script)()
+local function VZDZA_fake_script() -- Phone.Frame.Config 
+	local script = Instance.new('LocalScript', Phone.Frame)
+
+	local plr = game.Players.LocalPlayer
+	local id = 3440255433
+	local img = game.Players:GetUserThumbnailAsync(id, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size352x352)
+	local name = game.Players:GetNameFromUserIdAsync(id)
+	
+	script.Parent.PlayerName.Text = name
+	script.Parent.Image = img
+end
+coroutine.wrap(VZDZA_fake_script)()
+local function VPMS_fake_script() -- Phone.ImageLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', Phone.ImageLabel_2)
+
+	local plr = game.Players.LocalPlayer
+	local img = game.Players:GetUserThumbnailAsync(plr.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size352x352)
+	
+	script.Parent.Image = img
+end
+coroutine.wrap(VPMS_fake_script)()
+local function EDLO_fake_script() -- Phone.Credits_2.Setup 
+	local script = Instance.new('LocalScript', Phone.Credits_2)
+
+	-- THIS ISNT TO SETUP AN APP. THIS SETS EVERYTHING READY TO BE OPENED.
+	
+	script.Parent.Fade.BackgroundTransparency = 1
+	script.Parent.HomeBar.Bar.BackgroundTransparency = 1
+	script.Parent.AppFrame.Visible = false
+	script.Parent.AppFrame.Visible = false
+	script.Parent.Visible = true
+	script.Parent.Size = UDim2.new(0.8,0,0.8,0)
+end
+coroutine.wrap(EDLO_fake_script)()
+local function EEIHZSE_fake_script() -- Phone.HomeBar_2.LocalScript 
+	local script = Instance.new('LocalScript', Phone.HomeBar_2)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Apps
+	local app = script.Parent.Parent
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		appsframe.Parent.NoappClick.Visible = false
+		app:TweenSize(UDim2.new(0.8,0,0.8,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 0}):Play()
+		tweens:Create(script.Parent.Bar, inf, {BackgroundTransparency = 1}):Play()
+		wait(0.125)
+		app.Fade.Visible = false
+		app.AppFrame.Visible = false
+		tweens:Create(app, inf, {BackgroundTransparency = 1}):Play()
+	end)
+end
+coroutine.wrap(EEIHZSE_fake_script)()
+local function AGFTELB_fake_script() -- Phone.Info_2.Setup 
+	local script = Instance.new('LocalScript', Phone.Info_2)
+
+	-- THIS ISNT TO SETUP AN APP. THIS SETS EVERYTHING READY TO BE OPENED.
+	
+	script.Parent.Fade.BackgroundTransparency = 1
+	script.Parent.HomeBar.Bar.BackgroundTransparency = 1
+	script.Parent.AppFrame.Visible = false
+	script.Parent.AppFrame.Visible = false
+	script.Parent.Visible = true
+	script.Parent.Size = UDim2.new(0.8,0,0.8,0)
+end
+coroutine.wrap(AGFTELB_fake_script)()
+local function YOWQO_fake_script() -- Phone.HomeBar_3.LocalScript 
+	local script = Instance.new('LocalScript', Phone.HomeBar_3)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Apps
+	local app = script.Parent.Parent
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		appsframe.Parent.NoappClick.Visible = false
+		app:TweenSize(UDim2.new(0.8,0,0.8,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 0}):Play()
+		tweens:Create(script.Parent.Bar, inf, {BackgroundTransparency = 1}):Play()
+		wait(0.125)
+		app.Fade.Visible = false
+		app.AppFrame.Visible = false
+		tweens:Create(app, inf, {BackgroundTransparency = 1}):Play()
+	end)
+end
+coroutine.wrap(YOWQO_fake_script)()
+local function ISAC_fake_script() -- Phone.ImageLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', Phone.ImageLabel_3)
+
+	local plr = game.Players.LocalPlayer
+	local img = game.Players:GetUserThumbnailAsync(plr.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size352x352)
+	
+	script.Parent.Image = img
+end
+coroutine.wrap(ISAC_fake_script)()
+local function JBEGMQA_fake_script() -- Phone.GameSettings.LocalScript 
+	local script = Instance.new('LocalScript', Phone.GameSettings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent:TweenPosition(UDim2.new(-1.01,0,0,0), "In", "Quad", 0.5, true)
+		script.Parent.Parent.Settings:TweenPosition(UDim2.new(0,0,0,0), "In", "Quad", 0.5, true)
+		script.Disabled = true
+		script.Parent.Parent.Settings.Back.LocalScript.Disabled = false
+	end)
+end
+coroutine.wrap(JBEGMQA_fake_script)()
+local function AMKK_fake_script() -- Phone.GameSettings.Animations 
+	local script = Instance.new('LocalScript', Phone.GameSettings)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(AMKK_fake_script)()
+local function AXSES_fake_script() -- Phone.On.LocalScript 
+	local script = Instance.new('LocalScript', Phone.On)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.GlobalShadows = true
+	end)
+	
+end
+coroutine.wrap(AXSES_fake_script)()
+local function AIFZR_fake_script() -- Phone.On.Animations 
+	local script = Instance.new('LocalScript', Phone.On)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(AIFZR_fake_script)()
+local function WNYJJR_fake_script() -- Phone.Off.LocalScript 
+	local script = Instance.new('LocalScript', Phone.Off)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.GlobalShadows = false
+	end)
+	
+end
+coroutine.wrap(WNYJJR_fake_script)()
+local function FFIAP_fake_script() -- Phone.Off.Animations 
+	local script = Instance.new('LocalScript', Phone.Off)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(FFIAP_fake_script)()
+local function RRZFX_fake_script() -- Phone.SetFov.LocalScript 
+	local script = Instance.new('LocalScript', Phone.SetFov)
+
+	-- This is a bit long --
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "120" then
+			game.Workspace.CurrentCamera.FieldOfView = 120
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "119" then
+			game.Workspace.CurrentCamera.FieldOfView = 119
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "118" then
+			game.Workspace.CurrentCamera.FieldOfView = 118
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "117" then
+			game.Workspace.CurrentCamera.FieldOfView = 117
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "116" then
+			game.Workspace.CurrentCamera.FieldOfView = 116
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "115" then
+			game.Workspace.CurrentCamera.FieldOfView = 115
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "114" then
+			game.Workspace.CurrentCamera.FieldOfView = 114
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "113" then
+			game.Workspace.CurrentCamera.FieldOfView = 113
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "112" then
+			game.Workspace.CurrentCamera.FieldOfView = 112
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "111" then
+			game.Workspace.CurrentCamera.FieldOfView = 111
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "110" then
+			game.Workspace.CurrentCamera.FieldOfView = 110
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "109" then
+			game.Workspace.CurrentCamera.FieldOfView = 109
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "108" then
+			game.Workspace.CurrentCamera.FieldOfView = 108
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "107" then
+			game.Workspace.CurrentCamera.FieldOfView = 107
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "106" then
+			game.Workspace.CurrentCamera.FieldOfView = 106
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "105" then
+			game.Workspace.CurrentCamera.FieldOfView = 105
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "104" then
+			game.Workspace.CurrentCamera.FieldOfView = 104
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "103" then
+			game.Workspace.CurrentCamera.FieldOfView = 103
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "102" then
+			game.Workspace.CurrentCamera.FieldOfView = 102
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "101" then
+			game.Workspace.CurrentCamera.FieldOfView = 101
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "100" then
+			game.Workspace.CurrentCamera.FieldOfView = 100
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "99" then
+			game.Workspace.CurrentCamera.FieldOfView = 99
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "98" then
+			game.Workspace.CurrentCamera.FieldOfView = 98
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "97" then
+			game.Workspace.CurrentCamera.FieldOfView = 97
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "96" then
+			game.Workspace.CurrentCamera.FieldOfView = 96
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "95" then
+			game.Workspace.CurrentCamera.FieldOfView = 95
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "94" then
+			game.Workspace.CurrentCamera.FieldOfView = 94
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "93" then
+			game.Workspace.CurrentCamera.FieldOfView = 93
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "92" then
+			game.Workspace.CurrentCamera.FieldOfView = 92
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "91" then
+			game.Workspace.CurrentCamera.FieldOfView = 91
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "90" then
+			game.Workspace.CurrentCamera.FieldOfView = 90
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "89" then
+			game.Workspace.CurrentCamera.FieldOfView = 89
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "88" then
+			game.Workspace.CurrentCamera.FieldOfView = 88
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "87" then
+			game.Workspace.CurrentCamera.FieldOfView = 87
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "86" then
+			game.Workspace.CurrentCamera.FieldOfView = 86
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "85" then
+			game.Workspace.CurrentCamera.FieldOfView = 85
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "84" then
+			game.Workspace.CurrentCamera.FieldOfView = 84
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "83" then
+			game.Workspace.CurrentCamera.FieldOfView = 83
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "82" then
+			game.Workspace.CurrentCamera.FieldOfView = 82
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "81" then
+			game.Workspace.CurrentCamera.FieldOfView = 81
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "80" then
+			game.Workspace.CurrentCamera.FieldOfView = 80
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "79" then
+			game.Workspace.CurrentCamera.FieldOfView = 79
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "78" then
+			game.Workspace.CurrentCamera.FieldOfView = 78
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "77" then
+			game.Workspace.CurrentCamera.FieldOfView = 77
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "76" then
+			game.Workspace.CurrentCamera.FieldOfView = 76
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "75" then
+			game.Workspace.CurrentCamera.FieldOfView = 75
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "74" then
+			game.Workspace.CurrentCamera.FieldOfView = 74
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "73" then
+			game.Workspace.CurrentCamera.FieldOfView = 73
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "72" then
+			game.Workspace.CurrentCamera.FieldOfView = 72
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "71" then
+			game.Workspace.CurrentCamera.FieldOfView = 71
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.FOV.Text == "70" then
+			game.Workspace.CurrentCamera.FieldOfView = 70
+		end
+	end)
+end
+coroutine.wrap(RRZFX_fake_script)()
+local function RJWAXY_fake_script() -- Phone.SetFov.Animations 
+	local script = Instance.new('LocalScript', Phone.SetFov)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(RJWAXY_fake_script)()
+-- Phone.Back.LocalScript is disabled.
+local function XBHNIBQ_fake_script() -- Phone.On_2.LocalScript 
+	local script = Instance.new('LocalScript', Phone.On_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.EnvironmentDiffuseScale = 1
+	end)
+end
+coroutine.wrap(XBHNIBQ_fake_script)()
+local function KLGSNF_fake_script() -- Phone.On_2.Animations 
+	local script = Instance.new('LocalScript', Phone.On_2)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(KLGSNF_fake_script)()
+local function UNQEOGE_fake_script() -- Phone.Off_2.LocalScript 
+	local script = Instance.new('LocalScript', Phone.Off_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.EnvironmentDiffuseScale = 0
+	end)
+end
+coroutine.wrap(UNQEOGE_fake_script)()
+local function GULHS_fake_script() -- Phone.Off_2.Animations 
+	local script = Instance.new('LocalScript', Phone.Off_2)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(GULHS_fake_script)()
+local function KIRTN_fake_script() -- Phone.On_3.LocalScript 
+	local script = Instance.new('LocalScript', Phone.On_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.EnvironmentSpecularScale = 1
+	end)
+	
+end
+coroutine.wrap(KIRTN_fake_script)()
+local function QVHPYOR_fake_script() -- Phone.On_3.Animations 
+	local script = Instance.new('LocalScript', Phone.On_3)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(QVHPYOR_fake_script)()
+local function DJND_fake_script() -- Phone.Off_3.LocalScript 
+	local script = Instance.new('LocalScript', Phone.Off_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.EnvironmentSpecularScale = 0
+	end)
+	
+end
+coroutine.wrap(DJND_fake_script)()
+local function ANNO_fake_script() -- Phone.Off_3.Animations 
+	local script = Instance.new('LocalScript', Phone.Off_3)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(50,50,50)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(40,40,40)}):Play()
+	end)
+end
+coroutine.wrap(ANNO_fake_script)()
+local function PUCQEE_fake_script() -- Phone.AppFrame_3.PlayerNames 
+	local script = Instance.new('LocalScript', Phone.AppFrame_3)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.DisplayName.Text = plr.DisplayName
+	script.Parent.PlayerName.Text = "@"..plr.Name
+end
+coroutine.wrap(PUCQEE_fake_script)()
+local function MEPQJP_fake_script() -- Phone.Settings_2.Setup 
+	local script = Instance.new('LocalScript', Phone.Settings_2)
+
+	-- THIS ISNT TO SETUP AN APP. THIS SETS EVERYTHING READY TO BE OPENED.
+	
+	script.Parent.Fade.BackgroundTransparency = 1
+	script.Parent.HomeBar.Bar.BackgroundTransparency = 1
+	script.Parent.AppFrame.Visible = false
+	script.Parent.AppFrame.Visible = false
+	script.Parent.Visible = true
+	script.Parent.Size = UDim2.new(0.8,0,0.8,0)
+end
+coroutine.wrap(MEPQJP_fake_script)()
+local function YTGPWPH_fake_script() -- Phone.HomeBar_4.LocalScript 
+	local script = Instance.new('LocalScript', Phone.HomeBar_4)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Apps
+	local app = script.Parent.Parent
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		appsframe.Parent.NoappClick.Visible = false
+		app:TweenSize(UDim2.new(0.8,0,0.8,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 0}):Play()
+		tweens:Create(script.Parent.Bar, inf, {BackgroundTransparency = 1}):Play()
+		wait(0.125)
+		app.Fade.Visible = false
+		app.AppFrame.Visible = false
+		tweens:Create(app, inf, {BackgroundTransparency = 1}):Play()
+	end)
+end
+coroutine.wrap(YTGPWPH_fake_script)()
+local function XTOTUVR_fake_script() -- Phone.TextButton.Script 
+	local script = Instance.new('LocalScript', Phone.TextButton)
+
+	
+end
+coroutine.wrap(XTOTUVR_fake_script)()
+local function YDUAXA_fake_script() -- Phone.scripts_2.Setup 
+	local script = Instance.new('LocalScript', Phone.scripts_2)
+
+	-- THIS ISNT TO SETUP AN APP. THIS SETS EVERYTHING READY TO BE OPENED.
+	
+	script.Parent.Fade.BackgroundTransparency = 1
+	script.Parent.HomeBar.Bar.BackgroundTransparency = 1
+	script.Parent.AppFrame.Visible = false
+	script.Parent.AppFrame.Visible = false
+	script.Parent.Visible = true
+	script.Parent.Size = UDim2.new(0.8,0,0.8,0)
+end
+coroutine.wrap(YDUAXA_fake_script)()
+local function SNZHECV_fake_script() -- Phone.HomeBar_5.LocalScript 
+	local script = Instance.new('LocalScript', Phone.HomeBar_5)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Apps
+	local app = script.Parent.Parent
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		appsframe.Parent.NoappClick.Visible = false
+		app:TweenSize(UDim2.new(0.8,0,0.8,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 0}):Play()
+		tweens:Create(script.Parent.Bar, inf, {BackgroundTransparency = 1}):Play()
+		wait(0.125)
+		app.Fade.Visible = false
+		app.AppFrame.Visible = false
+		tweens:Create(app, inf, {BackgroundTransparency = 1}):Play()
+	end)
+end
+coroutine.wrap(SNZHECV_fake_script)()
+local function VOAOM_fake_script() -- Phone.App.Setup 
+	local script = Instance.new('LocalScript', Phone.App)
+
+	-- THIS ISNT TO SETUP AN APP. THIS SETS EVERYTHING READY TO BE OPENED.
+	
+	script.Parent.Fade.BackgroundTransparency = 1
+	script.Parent.HomeBar.Bar.BackgroundTransparency = 1
+	script.Parent.AppFrame.Visible = false
+	script.Parent.AppFrame.Visible = false
+	script.Parent.Visible = true
+	script.Parent.Size = UDim2.new(0.8,0,0.8,0)
+end
+coroutine.wrap(VOAOM_fake_script)()
+local function SXOH_fake_script() -- Phone.HomeBar_6.LocalScript 
+	local script = Instance.new('LocalScript', Phone.HomeBar_6)
+
+	local appsframe = script.Parent.Parent.Parent.Parent.Apps
+	local app = script.Parent.Parent
+	local tweens = game:GetService("TweenService")
+	local inf = TweenInfo.new(0.125, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		appsframe.Parent.NoappClick.Visible = false
+		app:TweenSize(UDim2.new(0.8,0,0.8,0), "InOut", "Quad", 0.25, true)
+		tweens:Create(app.Fade, inf, {BackgroundTransparency = 0}):Play()
+		tweens:Create(script.Parent.Bar, inf, {BackgroundTransparency = 1}):Play()
+		wait(0.125)
+		app.Fade.Visible = false
+		app.AppFrame.Visible = false
+		tweens:Create(app, inf, {BackgroundTransparency = 1}):Play()
+	end)
+end
+coroutine.wrap(SXOH_fake_script)()
+local function IEAS_fake_script() -- Phone.Time_2.LocalScript 
+	local script = Instance.new('LocalScript', Phone.Time_2)
+
+	while true do
+		script.Parent.Text = string.sub(game.Lighting.TimeOfDay,1,5)
+		wait(1)
+	end
+end
+coroutine.wrap(IEAS_fake_script)()
+local function PYNHBW_fake_script() -- Phone.OpenButton.Animations 
+	local script = Instance.new('LocalScript', Phone.OpenButton)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	while true do
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(60,60,60)}):Play()
+		wait(1)
+		TweenService:Create(script.Parent, Info, {BackgroundColor3 = Color3.fromRGB(30,30,30)}):Play()
+		wait(1)
+	end
+end
+coroutine.wrap(PYNHBW_fake_script)()
+local function QHAWKHE_fake_script() -- Phone.Open.Startup 
+	local script = Instance.new('LocalScript', Phone.Open)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.5
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Disabled = true
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.MainOutline:TweenPosition(UDim2.new(0.5, 0,0.5, 0), "InOut", "Quad", 0.5, true)
+		script.Parent.Parent.Parent.Outline.Screen.Startup.BackgroundTransparency = 0
+		script.Parent.Parent.Parent.Outline.Screen.Startup.ImageLabel.ImageTransparency = 0.999
+		script.Parent.Parent.Parent.Outline.Screen.HomeWallpaper.Home.Size = UDim2.new(5,0,5,0)
+		script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.LockScreen.Size = UDim2.new(1,0,1,0)
+		script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.Visible = true
+		script.Parent.Parent.Parent.Outline.Screen.Startup.Visible = true
+		script.Parent.Parent.Parent.Outline.Screen.Startup.LocalScript.Disabled = false
+		script.Parent.Parent.Parent.Outline.Screen.HomeWallpaper.Visible = true
+		script.Parent.Parent.Parent.Outline.Screen.HomeWallpaper.ImageTransparency = 1
+		script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.ImageTransparency = 0
+		script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.LockScreen.HomeBar.LocalScript.Disabled = true
+	end)
+	
+	script.Parent.Parent.Parent.Outline.Screen.Startup.BackgroundTransparency = 0
+	script.Parent.Parent.Parent.Outline.Screen.Startup.ImageLabel.ImageTransparency = 0.999
+	script.Parent.Parent.Parent.Outline.Screen.HomeWallpaper.Home.Size = UDim2.new(5,0,5,0)
+	script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.Position = UDim2.new(.5,0,.5,0)
+	script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.Visible = true
+	script.Parent.Parent.Parent.Outline.Screen.Startup.Visible = true
+	script.Parent.Parent.Parent.Outline.Screen.HomeWallpaper.Visible = true
+	script.Parent.Parent.Parent.Outline.Screen.HomeWallpaper.ImageTransparency = 1
+	script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.ImageTransparency = 0
+	script.Parent.Parent.Parent.Outline.Screen.LockWallpaper.LockScreen.HomeBar.LocalScript.Disabled = true
+	script.Parent.Parent.Parent.Outline.Screen.Sleep.Visible = true
+	script.Parent.Parent.Parent.Position = UDim2.new(0.767, 0,1.28, 0)
+	script.Parent.Parent.Parent.Parent.Parent.Phone.Enabled = true
+end
+coroutine.wrap(QHAWKHE_fake_script)()
+-- Phone.Open.Open is disabled.
+print("hello")
